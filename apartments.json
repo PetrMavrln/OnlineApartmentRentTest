@@ -6,8 +6,8 @@
     "rooms": 1, 
     "studioApartment": true, 
     "square": 35, 
-    "img": '../utils/imgs/apartments/1/1.jpg', 
-    "description": `1Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/1/1.jpg", 
+    "description": "1Встречайте рассвет над озером"
   },
   {
     "id": 2, 
@@ -16,8 +16,8 @@
     "rooms": 3, 
     "studioApartment": false, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/2/2.jpg', 
-    "description": `2Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/2/2.jpg", 
+    "description": "2Встречайте рассвет над озером"
   },
   {
     "id": 3, 
@@ -26,8 +26,8 @@
     "rooms": 3, 
     "studioApartment": true, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/3/3.jpg', 
-    "description": `3Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/3/3.jpg", 
+    "description": "3Встречайте рассвет над озером"
   },
   {
     "id": 4, 
@@ -36,8 +36,8 @@
     "rooms": 3, 
     "studioApartment": true, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/4/4.jpg', 
-    "description": `4Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/4/4.jpg", 
+    "description": "4Встречайте рассвет над озером"
   },
   {
     "id": 5, 
@@ -46,8 +46,8 @@
     "rooms": 3, 
     "studioApartment": false, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/5/5.jpg', 
-    "description": `5Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/5/5.jpg", 
+    "description": "5Встречайте рассвет над озером"
   },
   {
     "id": 6,
@@ -56,8 +56,8 @@
     "rooms": 3, 
     "studioApartment": false, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/6/6.jpg', 
-    "description": `6Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/6/6.jpg", 
+    "description": "6Встречайте рассвет над озером"
   },
   {
     "id": 7, 
@@ -66,8 +66,8 @@
     "rooms": 3, 
     "studioApartment": true, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/7/7.jpg', 
-    "description": `7Встречайте рассвет над озером`
+    "img": "../utils/imgs/apartments/7/7.jpg", 
+    "description": "7Встречайте рассвет над озером"
   },
   {
     "id": 8, 
@@ -76,7 +76,7 @@
     "rooms": 3, 
     "studioApartment": false, 
     "square": 135, 
-    "img": '../utils/imgs/apartments/8/8.jpg', 
-    "description": `8Стоимость проживания с мая по сентябрь`
+    "img": "../utils/imgs/apartments/8/8.jpg", 
+    "description": "8Стоимость проживания с мая по сентябрь"
   },
 ]
