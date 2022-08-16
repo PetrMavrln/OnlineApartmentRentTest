@@ -1,74 +1,82 @@
 [
   {
-    id: 1, 
-    title: "1-к. квартира, 35 м. кв., 7/9 эт.", 
-    price: 3900, rooms: 1, studioApartment: true, 
-    square: 35, 
-    img: '../utils/imgs/apartments/1/1.jpg', 
-    description: `1Встречайте рассвет над озером`
+    "id": 1, 
+    "title": "1-к. квартира, 35 м. кв., 7/9 эт.", 
+    "price": 3900, 
+    "rooms": 1, 
+    "studioApartment": true, 
+    "square": 35, 
+    "img": '../utils/imgs/apartments/1/1.jpg', 
+    "description": `1Встречайте рассвет над озером`
   },
   {
-    id: 2, 
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, rooms: 3, 
-    studioApartment: false, 
-    square: 135, 
-    img: '../utils/imgs/apartments/2/2.jpg', 
-    description: `2Встречайте рассвет над озером`
+    "id": 2, 
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": false, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/2/2.jpg', 
+    "description": `2Встречайте рассвет над озером`
   },
   {
-    id: 3, 
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, rooms: 3, 
-    studioApartment: true, 
-    square: 135, 
-    img: '../utils/imgs/apartments/3/3.jpg', 
-    description: `3Встречайте рассвет над озером`
+    "id": 3, 
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": true, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/3/3.jpg', 
+    "description": `3Встречайте рассвет над озером`
   },
   {
-    id: 4, 
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, rooms: 3, 
-    studioApartment: true, 
-    square: 135, 
-    img: '../utils/imgs/apartments/4/4.jpg', 
-    description: `4Встречайте рассвет над озером`
+    "id": 4, 
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": true, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/4/4.jpg', 
+    "description": `4Встречайте рассвет над озером`
   },
   {
-    id: 5, 
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, rooms: 3, 
-    studioApartment: false, 
-    square: 135, 
-    img: '../utils/imgs/apartments/5/5.jpg', 
-    description: `5Встречайте рассвет над озером`
+    "id": 5, 
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": false, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/5/5.jpg', 
+    "description": `5Встречайте рассвет над озером`
   },
   {
-    id: 6,
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, rooms: 3, 
-    studioApartment: false, 
-    square: 135, 
-    img: '../utils/imgs/apartments/6/6.jpg', 
-    description: `6Встречайте рассвет над озером`
+    "id": 6,
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": false, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/6/6.jpg', 
+    "description": `6Встречайте рассвет над озером`
   },
   {
-    id: 7, 
-    title: "Дом 135 м кв на участке 14 сот",
-    price: 15000, rooms: 3, 
-    studioApartment: true, 
-    square: 135, 
-    img: '../utils/imgs/apartments/7/7.jpg', 
-    description: `7Встречайте рассвет над озером`
+    "id": 7, 
+    "title": "Дом 135 м кв на участке 14 сот",
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": true, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/7/7.jpg', 
+    "description": `7Встречайте рассвет над озером`
   },
   {
-    id: 8, 
-    title: "Дом 135 м кв на участке 14 сот", 
-    price: 15000, 
-    rooms: 3, 
-    studioApartment: false, 
-    square: 135, 
-    img: '../utils/imgs/apartments/8/8.jpg', 
-    description: `8Стоимость проживания с мая по сентябрь`
+    "id": 8, 
+    "title": "Дом 135 м кв на участке 14 сот", 
+    "price": 15000, 
+    "rooms": 3, 
+    "studioApartment": false, 
+    "square": 135, 
+    "img": '../utils/imgs/apartments/8/8.jpg', 
+    "description": `8Стоимость проживания с мая по сентябрь`
   },
 ]
