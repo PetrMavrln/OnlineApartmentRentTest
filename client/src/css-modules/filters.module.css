@@ -1,0 +1,44 @@
+.filters {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.sort {
+  margin-left: 20px;
+}
+
+.sort:not(.sort:first-of-type) {
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.sort:not(.sort:first-of-type):hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.filtersRooms {
+  margin-right: 10px;
+}
+
+.filtersRoomsSelect,
+.filtersRoomsSelect option {
+  border-radius: 0;
+  border-color: #1b1b1b;
+}
+
+.filtersPrice {
+  margin-right: auto;
+}
+
+.filtersPriceControl {
+  margin-right: 10px;
+  width: 80px;
+  border-radius: 0;
+  border-color: #1b1b1b;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

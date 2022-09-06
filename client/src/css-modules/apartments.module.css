@@ -1,0 +1,15 @@
+.apartmentsContainer {
+  margin: 0 0 60px 0;
+  padding-top: 80px;
+}
+
+.container {
+  padding: 0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}

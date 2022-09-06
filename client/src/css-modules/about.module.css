@@ -1,0 +1,46 @@
+.aboutContainer {
+  padding: 0;
+  margin-top: 60px;
+}
+
+.aboutHeader,
+.aboutReview {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.aboutInfo {
+  justify-content: space-around;
+}
+
+.aboutText {
+  width: 650px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.aboutReviewCarousel {
+  border: 1px solid #e7eaef;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutReviewCarousel p,
+.aboutReviewCarousel h5 {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.aboutReviewCarousel h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutReviewCarousel p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

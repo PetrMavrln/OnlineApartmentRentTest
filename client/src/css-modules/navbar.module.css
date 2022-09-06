@@ -1,0 +1,39 @@
+.navContainer {
+  z-index: 99;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: transparent;
+  /* #01868c */
+  /* background-color: rgba(0, 0, 0, 0.15); */
+}
+
+.navBrand {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: auto;
+  padding: 10px 40px;
+  background-color: #deab68;
+  text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b;
+}
+
+.navBrand:hover {
+  color: #01868c;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #217074;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: auto;
+  padding: 10px 20px;
+  margin: 0 20px;
+}
+
+.navLink:hover {
+  color: #deab68;
+}

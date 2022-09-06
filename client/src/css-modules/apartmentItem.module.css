@@ -1,0 +1,50 @@
+.cardItem {
+  min-width: 320px;
+  margin-top: 40px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0;
+  border-color: #e7eaef;
+}
+
+.cardImg {
+  width: 90%;
+  height: 153px;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+.cardTitle {
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+.cardBottom {
+  margin-left: auto;
+  padding: 5px 10px 10px 10px;
+}
+
+.MyBtn {
+  border-radius: 0;
+  margin-left: 10px;
+  background-color: #deab68;
+  /* background-color: rgba(57, 133, 167, 1); */
+  border: none;
+}
+.MyBtn:hover {
+  background-color: #217074;
+}
+
+.cardItemInfo {
+  position: absolute;
+  top: 34px;
+  left: 15px;
+  height: 148px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cardItemInfoSpan {
+  padding: 2px 10px 0 10px;
+  color: white;
+}
