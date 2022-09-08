@@ -1,4 +1,4 @@
-.footer {
+.link {
   text-decoration: none;
   color: white;
   font-size: 24px;
@@ -9,18 +9,18 @@
   text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b;
 }
 
-.footer:hover {
+.link:hover {
   color: #deab68;
 }
 
-.footerLeft {
+.linkLeft {
   margin-left: auto;
 }
 
-.footerRight {
+.linkRight {
   margin-right: auto;
 }
 
-.footerPosCorrect {
+.wrapper {
   margin-top: -90px;
 }

@@ -17,21 +17,20 @@
   text-decoration: underline;
 }
 
-.filtersRooms {
+.rooms {
   margin-right: 10px;
 }
 
-.filtersRoomsSelect,
-.filtersRoomsSelect option {
+.roomsSelect {
   border-radius: 0;
   border-color: #1b1b1b;
 }
 
-.filtersPrice {
-  margin-right: auto;
+.price {
+  padding-left: 0;
 }
 
-.filtersPriceControl {
+.priceControl {
   margin-right: 10px;
   width: 80px;
   border-radius: 0;

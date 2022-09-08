@@ -14,7 +14,7 @@ const MySelect = ({ options, defaultValue }: { options: IApartment[]; defaultVal
   });
 
   return (
-    <Form.Select className={styles.filtersRoomsSelect}>
+    <Form.Select className={styles.roomsSelect}>
       <option value="">{defaultValue}</option>
       {sortable.map((sortedOption: any) => (
         <option value={sortedOption} key={sortedOption}>

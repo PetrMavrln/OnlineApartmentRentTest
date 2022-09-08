@@ -22,18 +22,18 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
           alt="apartment img"></Image>
         <Stack direction="horizontal" className={styles.cardBottom}>
           <b>{'от ' + apartment.price + ' ₽ в сутки'}</b>
-          <Button variant="dark" className={styles.MyBtn}>
-            Бронировать
+          <Button variant="dark" className={styles.cardBtn}>
+            Подробнее
           </Button>
         </Stack>
-        <Stack className={styles.cardItemInfo}>
-          <span className={styles.cardItemInfoSpan}>Комнат: {apartment.rooms}</span>
+        <Stack className={styles.cardItemInfoWrapper}>
+          <span className={styles.cardItemInfo}>Комнат: {apartment.rooms}</span>
           {apartment.studioApartment === true ? (
-            <span className={styles.cardItemInfoSpan}>Студия</span>
+            <span className={styles.cardItemInfo}>Студия</span>
           ) : (
-            <span className={styles.cardItemInfoSpan}></span>
+            <span className={styles.cardItemInfo}></span>
           )}
-          <span className={styles.cardItemInfoSpan}>Площадь: {apartment.square}</span>
+          <span className={styles.cardItemInfo}>Площадь: {apartment.square}</span>
         </Stack>
       </Card>
     </Col>

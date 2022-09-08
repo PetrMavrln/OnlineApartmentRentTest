@@ -13,11 +13,11 @@ import FooterComponent from '../components/FooterComponent';
 import styles from '../css-modules/mainPage.module.css';
 
 const Main = () => {
-  let bgImgComb = classNames('d-block', styles.bgImg);
+  let bgImgComb = classNames('d-block', styles.carouselImg);
 
   return (
     // TODO сделать компонент с каруселью
-    <div className={styles.main}>
+    <div className={styles.wrapper}>
       <Carousel indicators={false}>
         <Carousel.Item interval={3000}>
           <img className={bgImgComb} src={img1} alt="Первый слайд" />
@@ -47,9 +47,9 @@ const Main = () => {
           <img className={bgImgComb} src={img9} alt="Девятый слайд" />
         </Carousel.Item>
       </Carousel>
-      <div className={styles.mainHeader}>
-        <h1>КакДляСебя</h1>
-        <h2>посуточная сдача квартир</h2>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.header}>КакДляСебя</h1>
+        <h2 className={styles.subHeader}>посуточная сдача квартир</h2>
       </div>
       <FooterComponent />
     </div>

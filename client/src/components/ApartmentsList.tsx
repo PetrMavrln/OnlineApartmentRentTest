@@ -5,30 +5,28 @@ import ApartmentItem from './ApartmentItem';
 import FiltersComponent from './FiltersComponent';
 
 const ApartmentsList = () => {
-    const { apartments, isLoading } = useAppSelector(state => state.apartmentReducer)
+  const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
 
-    return (
-        <Container className={styles.container}>
-            <div className={styles.apartmentsContainer}>
-                <FiltersComponent />
-                <div>
-                    {isLoading ?
-                        <div className={styles.spinner}>
-                            <Spinner animation="border" />
-                        </div>
-                        :
-                        <Row className='d-flex'>
-                            {apartments.map(apartment =>
-                                <ApartmentItem key={apartment.id} apartment={apartment} />
-                            )}
-                        </Row>
-                    }
-
-                </div>
+  return (
+    <div className={styles.wrapper}>
+      <Container className={styles.container}>
+        <FiltersComponent />
+        <div>
+          {isLoading ? (
+            <div className={styles.spinner}>
+              <Spinner animation="border" />
             </div>
-        </Container>
-
-    );
+          ) : (
+            <Row className="d-flex">
+              {apartments.map((apartment) => (
+                <ApartmentItem key={apartment.id} apartment={apartment} />
+              ))}
+            </Row>
+          )}
+        </div>
+      </Container>
+    </div>
+  );
 };
 
 export default ApartmentsList;

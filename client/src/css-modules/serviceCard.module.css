@@ -1,0 +1,28 @@
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  text-align: center;
+  /* margin: 0 10px; */
+  width: 400px;
+  height: 325px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0;
+  border-color: #e7eaef;
+}
+
+.img {
+  margin: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+  font-weight: bold;
+}

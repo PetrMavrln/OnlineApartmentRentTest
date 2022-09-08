@@ -8,11 +8,6 @@ import { fetchApartments } from '../store/reducers/ActionCreators';
 import getFormatedText from '../utils/getFormatedText';
 
 const ApartmentPage = () => {
-  const leftApartmentPageCard = classNames(
-    styles.apartmentPageCards,
-    styles.firstApartmentPageCards,
-  );
-
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -25,36 +20,36 @@ const ApartmentPage = () => {
   const apartment = apartments[Number(id) - 1];
 
   return (
-    <Container className={styles.apartmentPageContainer}>
-      <Carousel className={styles.apartmentCarousel}>
+    <Container className={styles.container}>
+      <Carousel>
         {apartment?.img.map((imgSrc) => (
           <Carousel.Item interval={3000} key={apartment.img.indexOf(imgSrc)}>
-            <img
-              className={styles.apartmentPageImg}
-              src={require('../' + imgSrc)}
-              alt="Фото квартиры"
-            />
+            <img className={styles.img} src={require('../' + imgSrc)} alt="Фото квартиры" />
           </Carousel.Item>
         ))}
       </Carousel>
+
       <Stack direction="horizontal">
-        <Col md={4} className={styles.apartCol}>
-          <Card className={leftApartmentPageCard}>
+        <Col md={4} className={styles.col}>
+          <Card className={styles.card}>
             <span>
               {apartment?.title} <br />
               Комнат: {apartment?.rooms} <br />
               Площадь: {apartment?.square}
             </span>
-            <Stack className={styles.apartmentCardBottom}>
-              <span className={styles.apartmentPrice}>{apartment?.price} руб./сутки</span>
-              <Button variant="dark">Бронировать</Button>
+            <Stack className={styles.cardBottom}>
+              <span className={styles.price}>{apartment?.price} руб./сутки</span>
+              <Button variant="dark" className={styles.cardBtn}>
+                Бронировать
+              </Button>
             </Stack>
           </Card>
         </Col>
+
         <Col md={8} className={styles.apartCol}>
-          <Card className={styles.apartmentPageCards}>
-            <h2>ОПИСАНИЕ</h2>
-            <span className={styles.apartmentPageCardDescription}>
+          <Card className={styles.card}>
+            <h2 className={styles.header}>ОПИСАНИЕ</h2>
+            <span className={styles.cardDescription}>
               {getFormatedText(apartment?.description)}
             </span>
           </Card>

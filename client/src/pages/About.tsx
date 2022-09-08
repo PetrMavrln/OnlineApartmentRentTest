@@ -4,19 +4,20 @@ import styles from '../css-modules/about.module.css';
 
 const About = () => {
   return (
-    <Container className={styles.aboutContainer}>
-      <h1 className={styles.aboutHeader}>О нас</h1>
-      <Stack direction="horizontal" className={styles.aboutInfo}>
+    <Container className={styles.container}>
+      <h1 className={styles.header}>О нас</h1>
+      <Stack direction="horizontal" className={styles.info}>
         <img src={logo} width="300px" height="285px" alt="КакДляСебя"></img>
-        <p className={styles.aboutText}>
+        <p className={styles.text}>
           Как Для Себя - это удобные и современные квартиры, качественный сервис, надежность и
           привлекательные цены. Любая форма оплаты. Бронируйте с комфортом, бронируйте безопасно!
         </p>
       </Stack>
       {/* TODO прикрутить подгрузку отзывов */}
-      <h2 className={styles.aboutReview}>Отзывы</h2>
-      <Carousel variant="dark" indicators={false} className={styles.aboutReviewCarousel}>
+      <h2 className={styles.review}>Отзывы</h2>
+      <Carousel variant="dark" indicators={false} className={styles.reviewCarousel}>
         <Carousel.Item>
+          <img src={require('../assets/reviewImg.jpg')} alt="Фото автора отзыва"></img>
           <h5>Евгения</h5>
           <p>
             Квартира, чистая с хорошим ремонтом и всем не обходимым для проживания. Очень тихо и

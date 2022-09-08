@@ -1,4 +1,4 @@
-.navContainer {
+.wrapper {
   z-index: 99;
   padding: 0;
   position: absolute;
@@ -9,24 +9,47 @@
   /* background-color: rgba(0, 0, 0, 0.15); */
 }
 
-.navBrand {
+.brand {
   text-decoration: none;
   color: white;
   font-size: 40px;
   font-weight: bold;
   line-height: auto;
   padding: 10px 40px;
-  background-color: #deab68;
+  /* background-color: #deab68; */
   text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b;
+  position: relative;
 }
 
-.navBrand:hover {
+.brand::before {
+  content: 'kds';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  padding: 10px 40px;
+  background-color: #deab68;
+  z-index: -2;
+}
+
+.brand::after {
+  content: url('../assets/house2.svg');
+  width: 80px;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.brand:hover {
   color: #01868c;
 }
 
-.navLink {
+.link {
   text-decoration: none;
-  color: #217074;
+  color: #01868c;
   font-size: 26px;
   font-weight: bold;
   line-height: auto;
@@ -34,6 +57,6 @@
   margin: 0 20px;
 }
 
-.navLink:hover {
+.link:hover {
   color: #deab68;
 }

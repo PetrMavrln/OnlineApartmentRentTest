@@ -18,10 +18,10 @@ const Contacts = () => {
   let iconTelegram = classNames(styles.icon, styles.telegram);
 
   return (
-    <Container className={styles.contactsContainer}>
+    <Container className={styles.container}>
       <Stack direction="horizontal">
         <Col md={5}>
-          <Form className={styles.contactsForm}>
+          <Form className={styles.form}>
             <Form.Group className="mb-3">
               <Form.Label>Имя</Form.Label>
               <Form.Control type="text" placeholder="Ваше полное имя" />
@@ -39,14 +39,14 @@ const Contacts = () => {
             </Button>
           </Form>
         </Col>
-        <Col md={7} className={styles.contactsCol2}>
+        <Col md={7} className={styles.col}>
           <h1>Будьте на связи</h1>
           <span>
             Если вам нужна консультация, оставьте сообщение в форме обратной связи или свяжитесь с
             нами через социальные сети.
           </span>
           <br />
-          <ul className={styles.wrapper}>
+          <ul className={styles.socialsWrapper}>
             <li className={iconFb}>
               <img src={vkLogo} alt="VK"></img>
             </li>
