@@ -35,7 +35,11 @@ const About = () => {
         <Carousel variant="dark" indicators={false} className={styles.reviewCarousel}>
           {reviews?.map((review: IReview) => (
             <Carousel.Item key={review.id}>
-              <img src={require('../' + review.img)} alt="Фото пользователя"></img>
+              {review.img === '' ? (
+                <img src={require('../assets/reviews/anonymous.svg')} alt="Фото пользователя"></img>
+              ) : (
+                <img src={require('../' + review.img)} alt="Фото пользователя"></img>
+              )}
               <h5>{review.title}</h5>
               <p>{review.description}</p>
             </Carousel.Item>
