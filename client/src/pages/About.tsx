@@ -5,6 +5,7 @@ import styles from '../css-modules/about.module.css';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { IReview } from '../models/IReview';
 import { fetchReviews } from '../store/reducers/ActionCreators';
+import anonymous from '../assets/reviews/anonymous.svg';
 
 const About = () => {
   const dispatch = useAppDispatch();
@@ -36,7 +37,7 @@ const About = () => {
           {reviews?.map((review: IReview) => (
             <Carousel.Item key={review.id}>
               {review.img === '' ? (
-                <img src={require('../assets/reviews/anonymous.svg')} alt="Фото пользователя"></img>
+                <img src={anonymous} alt="Фото пользователя"></img>
               ) : (
                 <img src={require('../' + review.img)} alt="Фото пользователя"></img>
               )}
