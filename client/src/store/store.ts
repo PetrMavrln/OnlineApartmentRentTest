@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import apartmentReducer from '../store/reducers/ApartmentSlice';
+import reviewReducer from '../store/reducers/ReviewSlice';
 
 const rootReducer = combineReducers({
   apartmentReducer,
+  reviewReducer,
 });
 
 export const setupStore = () => {
