@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import { Button, Col, Container, Form, Stack } from 'react-bootstrap';
+import emailjs from 'emailjs-com';
 import styles from '../css-modules/contactsPage.module.css';
 import vkLogo from '../assets/contacts/vkLogo.svg';
 import instLogo from '../assets/contacts/instLogo.svg';
@@ -9,6 +10,7 @@ import phoneLogo from '../assets/contacts/phoneLogo.svg';
 import whatsappLogo from '../assets/contacts/whatsappLogo.svg';
 import tiktokLogo from '../assets/contacts/tiktokLogo.svg';
 import telegramLogo from '../assets/contacts/telegramLogo.svg';
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from '../utils/consts';
 
 const Contacts = () => {
   let iconFb = classNames(styles.icon, styles.facebook);
@@ -17,22 +19,41 @@ const Contacts = () => {
   let iconTiktok = classNames(styles.icon, styles.tiktok);
   let iconTelegram = classNames(styles.icon, styles.telegram);
 
+  const handleOnSubmit = (e: any) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result: any) => {
+        alert('Форма отправлена');
+      },
+      (error: any) => {
+        alert('Произошла ошибка: ' + error.text);
+      },
+    );
+    e.target.reset();
+  };
+
   return (
     <Container className={styles.container}>
       <Stack direction="horizontal">
         <Col md={5}>
-          <Form className={styles.form}>
+          <Form className={styles.form} onSubmit={handleOnSubmit}>
             <Form.Group className="mb-3">
               <Form.Label>Имя</Form.Label>
-              <Form.Control type="text" placeholder="Ваше полное имя" />
+              <Form.Control type="text" placeholder="Ваше полное имя" name="user_name" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Почта</Form.Label>
-              <Form.Control type="email" placeholder="Введите почту" />
+              <Form.Control type="email" placeholder="Введите почту" name="user_email" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Сообщение</Form.Label>
-              <Form.Control as="textarea" placeholder="Введите сообщение" rows={3} />
+              <Form.Control
+                as="textarea"
+                placeholder="Введите сообщение"
+                rows={3}
+                name="user_message"
+                required
+              />
             </Form.Group>
             <Button variant="dark" type="submit">
               Подтвердить
