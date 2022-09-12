@@ -21,7 +21,7 @@ const ApartmentPage = () => {
 
   return (
     <Container className={styles.container}>
-      <Carousel>
+      <Carousel className={styles.carousel}>
         {apartment?.img.map((imgSrc) => (
           <Carousel.Item interval={3000} key={apartment.img.indexOf(imgSrc)}>
             <img className={styles.img} src={require('../' + imgSrc)} alt="Фото квартиры" />

@@ -1,6 +1,7 @@
 .container {
   padding: 0;
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header,
@@ -23,10 +24,11 @@
 }
 
 .reviewCarousel {
-  border: 1px solid #e7eaef;
+  border: 1px solid #bbc6c8;
   text-align: center;
   margin-bottom: 80px;
   min-height: 200px;
+  background-color: white;
 }
 
 .reviewCarousel img {

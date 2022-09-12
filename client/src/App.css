@@ -6,3 +6,7 @@
   color: #1d1d1d;
   /*TODO доделать шрифт */
 }
+
+body {
+  background-color: rgba(231, 234, 239, 1);
+}

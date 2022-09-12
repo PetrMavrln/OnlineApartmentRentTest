@@ -1,9 +1,7 @@
-.wrapper {
-  padding-top: 80px;
-}
-
 .container {
   padding: 0;
+  padding-top: 80px;
+  height: 100vh;
 }
 .header {
   margin-top: 60px;

@@ -11,6 +11,10 @@ import img8 from '../assets/mainPageImgs/mainImg8.jpg';
 import img9 from '../assets/mainPageImgs/mainImg9.jpg';
 import FooterComponent from '../components/FooterComponent';
 import styles from '../css-modules/mainPage.module.css';
+import About from './About';
+import Apartments from './Apartments';
+import Contacts from './Contacts';
+import Services from './Services';
 
 const Main = () => {
   let bgImgComb = classNames('d-block', styles.carouselImg);
@@ -52,6 +56,10 @@ const Main = () => {
         <h2 className={styles.subHeader}>посуточная сдача квартир</h2>
       </div>
       <FooterComponent />
+      {/* <Services />
+      <Apartments />
+      <Contacts />
+      <About /> */}
     </div>
   );
 };

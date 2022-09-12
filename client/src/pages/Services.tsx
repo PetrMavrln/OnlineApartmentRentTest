@@ -22,21 +22,19 @@ const Services = () => {
     },
   ];
   return (
-    <div className={styles.wrapper}>
-      <Container className={styles.container}>
-        <h1 className={styles.header}>Наши услуги</h1>
-        <Stack direction="horizontal" className={styles.cardsWrapper}>
-          {services.map((service) => (
-            <ServiceCard
-              img={service.img}
-              title={service.title}
-              description={service.description}
-              key={service.img} //key должен быть разный!
-            />
-          ))}
-        </Stack>
-      </Container>
-    </div>
+    <Container className={styles.container}>
+      <h1 className={styles.header}>Наши услуги</h1>
+      <Stack direction="horizontal" className={styles.cardsWrapper}>
+        {services.map((service) => (
+          <ServiceCard
+            img={service.img}
+            title={service.title}
+            description={service.description}
+            key={service.img} //key должен быть разный!
+          />
+        ))}
+      </Stack>
+    </Container>
   );
 };
 

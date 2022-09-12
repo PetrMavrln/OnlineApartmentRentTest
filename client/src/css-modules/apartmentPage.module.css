@@ -11,7 +11,7 @@
 .card {
   border-radius: 0;
   margin-bottom: 40px;
-  border-color: #e7eaef;
+  border-color: #bbc6c8;
   font-weight: bold;
 }
 
@@ -37,8 +37,19 @@
   padding: 0;
 }
 
+.carousel {
+  z-index: 2;
+}
+
 .col {
   align-self: flex-start;
+  margin-top: -1px;
+  z-index: 1;
+}
+
+.apartCol {
+  margin-top: -1px;
+  z-index: 1;
 }
 
 .cardBottom {
