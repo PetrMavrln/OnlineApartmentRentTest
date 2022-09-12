@@ -9,15 +9,15 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
   const navigate = useNavigate();
 
   return (
-    <Col md={4} className="d-flex justify-content-center">
+    <Col md={4} className={styles.col}>
       <Card
         className={styles.cardItem}
         onClick={() => navigate(APARTMENT_ROUTE + '/' + apartment.id)}>
         <b className={styles.cardTitle}>{apartment.title}</b>
         <Image
           className={styles.cardImg}
-          width={296}
-          height={153}
+          // width={296}
+          // height={153}
           src={require('../' + apartment?.img[apartment?.id])}
           alt="apartment img"></Image>
         <Stack direction="horizontal" className={styles.cardBottom}>

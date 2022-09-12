@@ -1,7 +1,6 @@
 .container {
-  padding: 0;
-  padding-bottom: 60px;
-  padding-top: 80px;
+  padding: 80px 0 80px 0;
+  width: 1200px;
 }
 
 .spinner {
@@ -9,4 +8,37 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
+}
+
+.row {
+  display: flex;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    width: 880px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 624px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 368px;
+    overflow: hidden;
+  }
+  .row {
+    flex-direction: column;
+    width: 1150px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 308px;
+  }
 }

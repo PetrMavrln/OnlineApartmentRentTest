@@ -16,7 +16,7 @@ const ApartmentsList = () => {
             <Spinner animation="border" />
           </div>
         ) : (
-          <Row className="d-flex">
+          <Row className={styles.row}>
             {apartments.map((apartment) => (
               <ApartmentItem key={apartment.id} apartment={apartment} />
             ))}

@@ -6,7 +6,7 @@ import styles from '../css-modules/contactsPage.module.css';
 const Contacts = () => {
   return (
     <Container className={styles.container}>
-      <Stack direction="horizontal">
+      <Stack direction="horizontal" className={styles.wrapper}>
         <ContactForm />
         <Socials />
       </Stack>

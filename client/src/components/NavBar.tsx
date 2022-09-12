@@ -13,7 +13,7 @@ import styles from '../css-modules/navbar.module.css';
 const NavBar = () => {
   return (
     <Navbar className={styles.wrapper} collapseOnSelect expand="lg" bg="transperent">
-      <Container className="p-0">
+      <Container className={styles.container}>
         <NavLink className={styles.brand} to={MAIN_ROUTE}>
           kds
         </NavLink>

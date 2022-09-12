@@ -1,7 +1,8 @@
 .container {
-  padding: 0;
-  padding-top: 80px;
-  height: 100vh;
+  padding: 80px 0 80px 0;
+  width: 1200px;
+  /* height: 100vh; */
+  /* height: 950px; */
 }
 .header {
   margin-top: 60px;
@@ -13,4 +14,32 @@
 .cardsWrapper {
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    width: 880px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 624px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 368px;
+  }
+  .cardsWrapper {
+    flex-direction: column;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 308px;
+  }
 }

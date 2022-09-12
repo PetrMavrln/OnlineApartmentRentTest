@@ -20,10 +20,10 @@ const Socials = () => {
   return (
     <Col md={7} className={styles.col}>
       <h1>Будьте на связи</h1>
-      <span>
+      <p className={styles.description}>
         Если вам нужна консультация, оставьте сообщение в форме обратной связи или свяжитесь с нами
         через социальные сети.
-      </span>
+      </p>
       <br />
       <ul className={styles.socialsWrapper}>
         <li className={iconFb}>
@@ -46,11 +46,11 @@ const Socials = () => {
     <img className={styles.mail} src={mailLogo} alt="почта"></img>
     <a href="mailto:mail@mail.ru">nekita.lopatin1993@yandex.ru</a>
   </Stack> */}
-      <Stack direction="horizontal">
+      <Stack direction="horizontal" className={styles.phoneWrapper}>
         <img className={styles.phone} src={phoneLogo} alt="телефон"></img>
         <a href="tel:+79063111825">+7 906 311 18 25</a>
       </Stack>
-      <Stack direction="horizontal">
+      <Stack direction="horizontal" className={styles.phoneWrapper}>
         <img className={styles.phone} src={phoneLogo} alt="телефон"></img>
         <a href="tel:+79111414714">+7 911 141 47 14</a>
       </Stack>

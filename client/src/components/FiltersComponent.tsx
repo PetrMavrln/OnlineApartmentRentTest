@@ -34,9 +34,11 @@ const FiltersComponent = () => {
             placeholder="Макс"></Form.Control>
         </Stack>
       </Stack>
-      <span className={styles.sort}>Сортировка:</span>
-      <span className={styles.sort}>сначала дорогие</span>
-      <span className={styles.sort}>сначала дешевые</span>
+      <Stack direction="horizontal">
+        <span className={styles.sort}>Сортировка:</span>
+        <span className={styles.sort}>сначала дорогие</span>
+        <span className={styles.sort}>сначала дешевые</span>
+      </Stack>
     </Stack>
   );
 };

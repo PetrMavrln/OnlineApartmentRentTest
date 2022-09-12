@@ -56,10 +56,10 @@ const Main = () => {
         <h2 className={styles.subHeader}>посуточная сдача квартир</h2>
       </div>
       <FooterComponent />
-      {/* <Services />
+      <Services />
       <Apartments />
       <Contacts />
-      <About /> */}
+      <About />
     </div>
   );
 };

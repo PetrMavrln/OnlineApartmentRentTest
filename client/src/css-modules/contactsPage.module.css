@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 120px 0 0 0;
-  height: 100vh;
+  padding: 120px 0 80px 0;
+  /* height: 100vh; */
+  /* height: 950px; */
+  width: 1200px;
 }
 
 .form {
@@ -30,6 +32,10 @@
 .col {
   margin-left: 40px;
   margin-bottom: auto;
+}
+
+.description {
+  /* padding-right: 20px; */
 }
 
 .col * {
@@ -64,7 +70,7 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border: 1px solid #1d1d1d;
-  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: background-color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .socialsWrapper .icon:first-child {
@@ -105,4 +111,146 @@
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    width: 880px;
+  }
+  .description {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 624px;
+  }
+
+  .form * {
+    font-size: 14px;
+  }
+
+  .description {
+    width: 320px;
+  }
+
+  .col {
+    font-size: 14px;
+  }
+
+  .col a {
+    font-size: 18px;
+  }
+
+  .col h1 {
+    font-size: 24px;
+  }
+
+  .socialsWrapper {
+    margin: 5px 0;
+  }
+
+  .socialsWrapper .icon {
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 368px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 300px;
+    padding: 20px;
+    margin-left: -75px;
+    margin-bottom: 20px;
+  }
+
+  .form * {
+    font-size: 14px;
+  }
+
+  .col {
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .col a {
+    font-size: 16px;
+  }
+
+  .col h1 {
+    font-size: 18px;
+  }
+
+  .phoneWrapper {
+    margin-left: 30px;
+  }
+
+  .socialsWrapper {
+    margin: 5px 0;
+    margin-left: -30px;
+  }
+
+  .socialsWrapper .icon {
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 308px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 280px;
+    padding: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .form * {
+    font-size: 14px;
+  }
+
+  .col {
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .col a {
+    font-size: 16px;
+  }
+
+  .col h1 {
+    font-size: 18px;
+  }
+
+  .phoneWrapper {
+    margin-left: 80px;
+  }
+
+  .socialsWrapper {
+    margin: 5px 0;
+    margin-left: 0;
+  }
+
+  .socialsWrapper .icon {
+    margin: 5px;
+    margin-bottom: 20px;
+  }
 }

@@ -20,7 +20,7 @@ const About = () => {
     <Container className={styles.container}>
       <h1 className={styles.header}>О нас</h1>
       <Stack direction="horizontal" className={styles.info}>
-        <img src={logo} width="300px" height="285px" alt="КакДляСебя"></img>
+        <img className={styles.logo} src={logo} width="300px" height="285px" alt="КакДляСебя"></img>
         <p className={styles.text}>
           Как Для Себя - это удобные и современные квартиры, качественный сервис, надежность и
           привлекательные цены. Любая форма оплаты. Бронируйте с комфортом, бронируйте безопасно!
