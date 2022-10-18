@@ -30,7 +30,7 @@ body {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     min-width: 308px;
   }

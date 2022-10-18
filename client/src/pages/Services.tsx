@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Stack } from 'react-bootstrap';
 import ServiceCard from '../components/ServiceCard';
 import styles from '../css-modules/servicesPage.module.css';
+import { Element } from 'react-scroll';
+import { InView } from 'react-intersection-observer';
 
 const Services = () => {
   const services = [
@@ -21,20 +23,23 @@ const Services = () => {
       description: 'Продажа апартаментов, домов, участков земли в кротчайшие сроки',
     },
   ];
+
   return (
-    <Container className={styles.container}>
-      <h1 className={styles.header}>Наши услуги</h1>
-      <Stack direction="horizontal" className={styles.cardsWrapper}>
-        {services.map((service) => (
-          <ServiceCard
-            img={service.img}
-            title={service.title}
-            description={service.description}
-            key={service.img} //key должен быть разный!
-          />
-        ))}
-      </Stack>
-    </Container>
+    <Element name="services">
+      <Container className={styles.container}>
+        <h1 className={styles.header}>Наши услуги</h1>
+        <Stack direction="horizontal" className={styles.cardsWrapper}>
+          {services.map((service) => (
+            <ServiceCard
+              img={service.img}
+              title={service.title}
+              description={service.description}
+              key={service.img} //key должен быть разный!
+            />
+          ))}
+        </Stack>
+      </Container>
+    </Element>
   );
 };
 
