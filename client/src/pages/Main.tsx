@@ -7,8 +7,6 @@ import img4 from '../assets/mainPageImgs/mainImg4.jpg';
 import img5 from '../assets/mainPageImgs/mainImg5.jpg';
 import img6 from '../assets/mainPageImgs/mainImg6.jpg';
 import img7 from '../assets/mainPageImgs/mainImg7.jpg';
-import img8 from '../assets/mainPageImgs/mainImg8.jpg';
-import img9 from '../assets/mainPageImgs/mainImg9.jpg';
 import FooterComponent from '../components/FooterComponent';
 import styles from '../css-modules/mainPage.module.css';
 import About from './About';
@@ -43,12 +41,6 @@ const Main = () => {
         </Carousel.Item>
         <Carousel.Item interval={3000}>
           <img className={bgImgComb} src={img7} alt="Седьмой слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img8} alt="Восьмой слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img9} alt="Девятый слайд" />
         </Carousel.Item>
       </Carousel>
       <div className={styles.headerContainer}>

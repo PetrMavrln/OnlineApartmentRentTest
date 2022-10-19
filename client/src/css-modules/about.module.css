@@ -16,6 +16,14 @@
   justify-content: space-around;
 }
 
+.logo {
+  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
 .text {
   width: 650px;
   margin-bottom: 0;
@@ -34,6 +42,11 @@
   width: 150px;
   border-radius: 50%;
   margin: 20px;
+  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.reviewCarousel img:hover {
+  transform: scale(1.1);
 }
 
 .reviewCarousel p,

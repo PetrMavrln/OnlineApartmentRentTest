@@ -14,12 +14,14 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
         className={styles.cardItem}
         onClick={() => navigate(APARTMENT_ROUTE + '/' + apartment.id)}>
         <b className={styles.cardTitle}>{apartment.title}</b>
-        <Image
-          className={styles.cardImg}
-          // width={296}
-          // height={153}
-          src={require('../' + apartment?.img[apartment?.id])}
-          alt="apartment img"></Image>
+        <div className={styles.cardImgContainer}>
+          <Image
+            className={styles.cardImg}
+            // width={296}
+            // height={153}
+            src={require('../' + apartment?.img[apartment?.id])}
+            alt="apartment img"></Image>
+        </div>
         <Stack direction="horizontal" className={styles.cardBottom}>
           <b>{'от ' + apartment.price + ' ₽ в сутки'}</b>
           <Button variant="dark" className={styles.cardBtn}>
