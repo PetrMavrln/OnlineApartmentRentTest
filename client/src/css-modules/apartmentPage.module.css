@@ -4,6 +4,7 @@
 }
 
 .img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   min-height: 350px;
@@ -44,6 +45,7 @@
 }
 
 .col {
+  -ms-flex-item-align: start;
   align-self: flex-start;
   margin-top: -1px;
   z-index: 1;
@@ -63,6 +65,8 @@
 .price {
   margin-top: 10px;
   margin-bottom: 10px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   font-size: 30px;
   color: #1d1d1d;
@@ -71,6 +75,8 @@
 .cardBtn {
   margin-bottom: 20px;
   width: 150px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   border-radius: 0;
   background-color: #deab68;
