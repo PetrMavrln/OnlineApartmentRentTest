@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/OnlineApartmentRentTest/static/css/main.f4317e98.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.b9e3f5af.js",
-    "static/media/mainImg5.jpg": "/OnlineApartmentRentTest/static/media/mainImg5.31a202f8d4e1f18c13ff.jpg",
-    "static/media/mainImg2.jpg": "/OnlineApartmentRentTest/static/media/mainImg2.2ba7b4211b1e609c4f17.jpg",
+    "main.css": "/OnlineApartmentRentTest/static/css/main.418d9958.css",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.739e2279.js",
+    "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.ffe3d33ce7daa2813a82.jpg",
+    "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.56b41040811c7efa47a5.jpg",
+    "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.b4bbe88ac42d4d219645.jpg",
+    "static/media/mainImg2.jpg": "/OnlineApartmentRentTest/static/media/mainImg2.ad7b73adcb8566d06896.jpg",
     "static/media/1.24.jpg": "/OnlineApartmentRentTest/static/media/1.24.8330ded6f727c28dad55.jpg",
     "static/media/1.26.jpg": "/OnlineApartmentRentTest/static/media/1.26.645bad25b181417127b7.jpg",
     "static/media/1.25.jpg": "/OnlineApartmentRentTest/static/media/1.25.fd54d6217940dede6485.jpg",
     "static/media/1.23.jpg": "/OnlineApartmentRentTest/static/media/1.23.ff738d205393dee31070.jpg",
     "static/media/1.22.jpg": "/OnlineApartmentRentTest/static/media/1.22.93839ce9ad6ca96f6b61.jpg",
-    "static/media/mainImg6.jpg": "/OnlineApartmentRentTest/static/media/mainImg6.239cfbfd5b762f9a48f0.jpg",
+    "static/media/mainImg4.jpg": "/OnlineApartmentRentTest/static/media/mainImg4.239cfbfd5b762f9a48f0.jpg",
     "static/media/1.27.jpg": "/OnlineApartmentRentTest/static/media/1.27.f9239440dc8287e537e1.jpg",
-    "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.c670d1445f1cde85d976.jpg",
-    "static/media/mainImg4.jpg": "/OnlineApartmentRentTest/static/media/mainImg4.46212855367da829134d.jpg",
-    "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.e068a397d8125f09fe72.jpg",
-    "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.9c06488a22399657d950.jpg",
-    "static/media/mainImg8.jpg": "/OnlineApartmentRentTest/static/media/mainImg8.56a6f0cb33d5df30f24c.jpg",
-    "static/media/mainImg9.jpg": "/OnlineApartmentRentTest/static/media/mainImg9.3ce7340d45c68ea6be88.jpg",
+    "static/media/mainImg6.jpg": "/OnlineApartmentRentTest/static/media/mainImg6.676ae3999531121155b1.jpg",
     "static/media/1.11.jpg": "/OnlineApartmentRentTest/static/media/1.11.66d876bddaf5949ef0c2.jpg",
     "static/media/1.1.jpg": "/OnlineApartmentRentTest/static/media/1.1.1a4b58f5856bf8c392ae.jpg",
     "static/media/1.7.jpg": "/OnlineApartmentRentTest/static/media/1.7.3d81477a50bdef56d133.jpg",
     "static/media/1.4.jpg": "/OnlineApartmentRentTest/static/media/1.4.7a1383d59f094b56f92f.jpg",
+    "static/media/mainImg5.jpg": "/OnlineApartmentRentTest/static/media/mainImg5.7d48d411e199615eb4a3.jpg",
     "static/media/1.21.jpg": "/OnlineApartmentRentTest/static/media/1.21.d0f76681870505f2c185.jpg",
     "static/media/1.12.jpg": "/OnlineApartmentRentTest/static/media/1.12.573fa08c78b8bf87f97c.jpg",
     "static/media/1.8.jpg": "/OnlineApartmentRentTest/static/media/1.8.467cdc618b87a945a865.jpg",
@@ -62,11 +60,11 @@
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
-    "main.f4317e98.css.map": "/OnlineApartmentRentTest/static/css/main.f4317e98.css.map",
-    "main.b9e3f5af.js.map": "/OnlineApartmentRentTest/static/js/main.b9e3f5af.js.map"
+    "main.418d9958.css.map": "/OnlineApartmentRentTest/static/css/main.418d9958.css.map",
+    "main.739e2279.js.map": "/OnlineApartmentRentTest/static/js/main.739e2279.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4317e98.css",
-    "static/js/main.b9e3f5af.js"
+    "static/css/main.418d9958.css",
+    "static/js/main.739e2279.js"
   ]
 }
