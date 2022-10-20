@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Button, Card, Carousel, Col, Container, Stack } from 'react-bootstrap';
 import { useLocation, useParams } from 'react-router-dom';
+import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/apartmentPage.module.css';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchApartments } from '../store/reducers/ActionCreators';
@@ -64,6 +65,7 @@ const ApartmentPage = () => {
             </Card>
           </Col>
         </Stack>
+        <ScrollToTopBtn />
       </Container>
     </div>
   );

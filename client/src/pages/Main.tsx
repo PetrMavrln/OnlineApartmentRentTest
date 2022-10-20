@@ -8,6 +8,7 @@ import img5 from '../assets/mainPageImgs/mainImg5.jpg';
 import img6 from '../assets/mainPageImgs/mainImg6.jpg';
 import img7 from '../assets/mainPageImgs/mainImg7.jpg';
 import FooterComponent from '../components/FooterComponent';
+import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/mainPage.module.css';
 import About from './About';
 import Apartments from './Apartments';
@@ -52,6 +53,7 @@ const Main = () => {
       <Apartments />
       <Contacts />
       <About />
+      <ScrollToTopBtn />
     </div>
   );
 };

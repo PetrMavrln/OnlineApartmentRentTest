@@ -79,6 +79,7 @@
 
 .link:hover {
   color: #deab68;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
