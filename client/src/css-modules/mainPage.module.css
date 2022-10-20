@@ -25,10 +25,10 @@
 }
 /* TODO шрифт под другие разрешения экрана сделать */
 .header {
-  font-family: 'Comforter Brush', 'Piazzolla', 'Inter', 'Manrope', serif;
+  font-family: 'Cormorant Garamond', 'Piazzolla', 'Inter', 'Manrope', serif;
   color: white;
   font-size: 96px;
-  text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b;
+  /* text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b; */
 }
 
 .subHeader {

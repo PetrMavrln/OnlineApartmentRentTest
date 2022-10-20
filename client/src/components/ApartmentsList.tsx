@@ -9,7 +9,7 @@ const ApartmentsList = () => {
 
   return (
     <Container className={styles.container}>
-      <FiltersComponent />
+      {/* <FiltersComponent /> */}
       <div>
         {isLoading ? (
           <div className={styles.spinner}>

@@ -1,7 +1,6 @@
-import classNames from 'classnames';
 import { useEffect } from 'react';
-import { Button, Card, Carousel, Col, Container, Spinner, Stack } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Button, Card, Carousel, Col, Container, Stack } from 'react-bootstrap';
+import { useLocation, useParams } from 'react-router-dom';
 import styles from '../css-modules/apartmentPage.module.css';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchApartments } from '../store/reducers/ActionCreators';
@@ -19,8 +18,15 @@ const ApartmentPage = () => {
   const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
   const apartment = apartments[Number(id) - 1];
 
+  // -> scroll to top при переходе на страницу товара
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  // <-
   return (
-    <Container className={styles.container}>
+    <div>
       <Carousel className={styles.carousel}>
         {apartment?.img.map((imgSrc) => (
           <Carousel.Item interval={3000} key={apartment.img.indexOf(imgSrc)}>
@@ -28,34 +34,38 @@ const ApartmentPage = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+      <Container className={styles.container}>
+        <Stack direction="horizontal">
+          <Col md={4} className={styles.col}>
+            <Card className={styles.card}>
+              <div className={styles.cardInfo}>
+                {apartment?.title} <br />
+                Комнат: {apartment?.rooms} <br />
+                Площадь: {apartment?.square} <br />
+                Количество человек: *нужно добавить* Адрес: *нужно добавить* <br />
+              </div>
+              <Stack className={styles.cardBottom}>
+                <span className={styles.price}>{apartment?.price} руб./сутки</span>
+                <Button variant="dark" className={styles.cardBtn}>
+                  Бронировать
+                </Button>
+              </Stack>
+            </Card>
+          </Col>
 
-      <Stack direction="horizontal">
-        <Col md={4} className={styles.col}>
-          <Card className={styles.card}>
-            <span>
-              {apartment?.title} <br />
-              Комнат: {apartment?.rooms} <br />
-              Площадь: {apartment?.square}
-            </span>
-            <Stack className={styles.cardBottom}>
-              <span className={styles.price}>{apartment?.price} руб./сутки</span>
-              <Button variant="dark" className={styles.cardBtn}>
-                Бронировать
-              </Button>
-            </Stack>
-          </Card>
-        </Col>
-
-        <Col md={8} className={styles.apartCol}>
-          <Card className={styles.card}>
-            <h2 className={styles.header}>ОПИСАНИЕ</h2>
-            <span className={styles.cardDescription}>
-              {getFormatedText(apartment?.description)}
-            </span>
-          </Card>
-        </Col>
-      </Stack>
-    </Container>
+          <Col md={8} className={styles.apartCol}>
+            <Card className={styles.card}>
+              <div className={styles.cardDescription}>
+                <h2 className={styles.header}>ОПИСАНИЕ</h2>
+                <span className={styles.description}>
+                  {getFormatedText(apartment?.description)}
+                </span>
+              </div>
+            </Card>
+          </Col>
+        </Stack>
+      </Container>
+    </div>
   );
 };
 
