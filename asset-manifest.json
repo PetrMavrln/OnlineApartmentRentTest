@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnlineApartmentRentTest/static/css/main.b1e966f2.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.13f41d75.js",
+    "main.css": "/OnlineApartmentRentTest/static/css/main.49e97363.css",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.8c10ae42.js",
     "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.ffe3d33ce7daa2813a82.jpg",
     "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.56b41040811c7efa47a5.jpg",
     "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.b4bbe88ac42d4d219645.jpg",
@@ -46,23 +46,26 @@
     "static/media/review5.jpg": "/OnlineApartmentRentTest/static/media/review5.9a9668b73be65df8c4f4.jpg",
     "static/media/review2.jpg": "/OnlineApartmentRentTest/static/media/review2.d5c7eebf749ba509d3b3.jpg",
     "static/media/buyHouse.svg": "/OnlineApartmentRentTest/static/media/buyHouse.5bf038e4caa472c9f95e.svg",
+    "static/media/design.svg": "/OnlineApartmentRentTest/static/media/design.975b15ec9bdb88761d4e.svg",
     "static/media/sellHouse.svg": "/OnlineApartmentRentTest/static/media/sellHouse.908f2ca40d1341192923.svg",
     "static/media/rentHouse.svg": "/OnlineApartmentRentTest/static/media/rentHouse.f8d4f81d2664d9fc6b51.svg",
     "static/media/telegramLogo.svg": "/OnlineApartmentRentTest/static/media/telegramLogo.39173e90c5023260def7a9012f48edf2.svg",
     "static/media/management.svg": "/OnlineApartmentRentTest/static/media/management.c62e9290003ec610a164.svg",
     "static/media/whatsappLogo.svg": "/OnlineApartmentRentTest/static/media/whatsappLogo.164290c658dddf2e11222440b65767ae.svg",
+    "static/media/ratingStar.svg": "/OnlineApartmentRentTest/static/media/ratingStar.febfea7c9b6536e11c74.svg",
     "static/media/anonymous.svg": "/OnlineApartmentRentTest/static/media/anonymous.02e9d3fa1d6f98ff24d90692516663f5.svg",
     "static/media/phoneLogo.svg": "/OnlineApartmentRentTest/static/media/phoneLogo.915675a4fe5b126e1af021a8b8a229d7.svg",
+    "static/media/location.svg": "/OnlineApartmentRentTest/static/media/location.5ebf9f5c917091adbceb.svg",
     "index.html": "/OnlineApartmentRentTest/index.html",
     "static/media/house.svg": "/OnlineApartmentRentTest/static/media/house.6bab8a5884eec460d684.svg",
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
-    "main.b1e966f2.css.map": "/OnlineApartmentRentTest/static/css/main.b1e966f2.css.map",
-    "main.13f41d75.js.map": "/OnlineApartmentRentTest/static/js/main.13f41d75.js.map"
+    "main.49e97363.css.map": "/OnlineApartmentRentTest/static/css/main.49e97363.css.map",
+    "main.8c10ae42.js.map": "/OnlineApartmentRentTest/static/js/main.8c10ae42.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1e966f2.css",
-    "static/js/main.13f41d75.js"
+    "static/css/main.49e97363.css",
+    "static/js/main.8c10ae42.js"
   ]
 }
