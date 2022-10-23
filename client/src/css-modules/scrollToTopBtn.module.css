@@ -21,3 +21,14 @@
 .btn:hover {
   background: #01868c;
 }
+
+@media screen and (max-width: 767px) {
+  .btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(222, 171, 104, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

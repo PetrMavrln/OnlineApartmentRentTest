@@ -16,7 +16,7 @@ const ServiceCard = ({
       <Card className={styles.card}>
         <Image
           className={styles.img}
-          width={296}
+          width={153}
           height={153}
           src={require('../' + img)}
           alt={`${title}`}></Image>

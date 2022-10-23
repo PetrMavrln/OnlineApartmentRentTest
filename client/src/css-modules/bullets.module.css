@@ -1,0 +1,42 @@
+.wrapper {
+  width: 100%;
+  background-color: rgba(1, 134, 140, 0.3);
+}
+
+.container {
+  margin-top: 0;
+  padding: 0px 0 40px 0;
+  width: 1200px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    width: 880px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    width: 624px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 368px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 308px;
+  }
+}

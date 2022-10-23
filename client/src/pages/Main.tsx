@@ -7,6 +7,7 @@ import img4 from '../assets/mainPageImgs/mainImg4.jpg';
 import img5 from '../assets/mainPageImgs/mainImg5.jpg';
 import img6 from '../assets/mainPageImgs/mainImg6.jpg';
 import img7 from '../assets/mainPageImgs/mainImg7.jpg';
+import Bullets from '../components/Bullets';
 import FooterComponent from '../components/FooterComponent';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/mainPage.module.css';
@@ -49,6 +50,7 @@ const Main = () => {
         <h2 className={styles.subHeader}>посуточная сдача квартир</h2>
       </div>
       <FooterComponent />
+      <Bullets />
       <Services />
       <Apartments />
       <Contacts />
