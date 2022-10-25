@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnlineApartmentRentTest/static/css/main.49e97363.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.8c10ae42.js",
+    "main.css": "/OnlineApartmentRentTest/static/css/main.2cf4f811.css",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.949f340c.js",
     "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.ffe3d33ce7daa2813a82.jpg",
     "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.56b41040811c7efa47a5.jpg",
     "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.b4bbe88ac42d4d219645.jpg",
@@ -38,10 +38,14 @@
     "static/media/1.3.jpg": "/OnlineApartmentRentTest/static/media/1.3.d083cfab45e2c58f8b7f.jpg",
     "static/media/1.16.jpg": "/OnlineApartmentRentTest/static/media/1.16.95ac3d07ea999f586d26.jpg",
     "static/media/review21.jpg": "/OnlineApartmentRentTest/static/media/review21.2426ac2f945bc5af8fd4.jpg",
+    "static/media/review32.jpg": "/OnlineApartmentRentTest/static/media/review32.6a2aec401fb081283113.jpg",
+    "static/media/review33.jpg": "/OnlineApartmentRentTest/static/media/review33.0817fe4938f156efb074.jpg",
     "static/media/review11.jpg": "/OnlineApartmentRentTest/static/media/review11.2843f2aacb3799440235.jpg",
+    "static/media/review35.jpg": "/OnlineApartmentRentTest/static/media/review35.90cbfda94348e6e26f84.jpg",
     "static/media/review12.jpg": "/OnlineApartmentRentTest/static/media/review12.017019db2b2ec31eee31.jpg",
     "static/media/review23.jpg": "/OnlineApartmentRentTest/static/media/review23.4ad23b4e56e07535eb52.jpg",
     "static/media/review1.jpg": "/OnlineApartmentRentTest/static/media/review1.7fb67616c8b94f9da876.jpg",
+    "static/media/review36.jpg": "/OnlineApartmentRentTest/static/media/review36.645a11d23c57266085b6.jpg",
     "static/media/review17.jpg": "/OnlineApartmentRentTest/static/media/review17.651958e63dbb9ebf2300.jpg",
     "static/media/review5.jpg": "/OnlineApartmentRentTest/static/media/review5.9a9668b73be65df8c4f4.jpg",
     "static/media/review2.jpg": "/OnlineApartmentRentTest/static/media/review2.d5c7eebf749ba509d3b3.jpg",
@@ -61,11 +65,11 @@
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
-    "main.49e97363.css.map": "/OnlineApartmentRentTest/static/css/main.49e97363.css.map",
-    "main.8c10ae42.js.map": "/OnlineApartmentRentTest/static/js/main.8c10ae42.js.map"
+    "main.2cf4f811.css.map": "/OnlineApartmentRentTest/static/css/main.2cf4f811.css.map",
+    "main.949f340c.js.map": "/OnlineApartmentRentTest/static/js/main.949f340c.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e97363.css",
-    "static/js/main.8c10ae42.js"
+    "static/css/main.2cf4f811.css",
+    "static/js/main.949f340c.js"
   ]
 }
