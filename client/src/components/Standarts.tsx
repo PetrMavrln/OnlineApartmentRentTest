@@ -7,42 +7,32 @@ const Standarts = () => {
   const standarts = [
     {
       id: 1,
-      img: 'assets/ratingStar.svg',
-      title: 'Мини-кухня',
+      img: 'assets/standarts/kitchen.svg',
+      title: 'Кухня',
     },
     {
       id: 2,
-      img: 'assets/ratingStar.svg',
-      title: 'Большая двуспальная кровать',
+      img: 'assets/standarts/bed.svg',
+      title: 'Большая кровать',
     },
     {
       id: 3,
-      img: 'assets/ratingStar.svg',
-      title: 'Кондиционер',
-    },
-    {
-      id: 4,
-      img: 'assets/ratingStar.svg',
-      title: 'Спутниковое телевидение',
-    },
-    {
-      id: 5,
-      img: 'assets/ratingStar.svg',
+      img: 'assets/standarts/cosmetics.svg',
       title: 'Комплект косметических принадлежностей',
     },
     {
-      id: 6,
-      img: 'assets/ratingStar.svg',
+      id: 4,
+      img: 'assets/standarts/hairDryer.svg',
       title: 'Фен и гладильные принадлежности',
     },
     {
-      id: 7,
-      img: 'assets/ratingStar.svg',
+      id: 5,
+      img: 'assets/standarts/wifi.svg',
       title: 'Бесплатный Wi-Fi',
     },
     {
-      id: 8,
-      img: 'assets/ratingStar.svg',
+      id: 6,
+      img: 'assets/standarts/bathroom.svg',
       title: 'Ванная комната',
     },
   ];

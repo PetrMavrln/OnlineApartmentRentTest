@@ -52,7 +52,7 @@ const Main = () => {
       </div>
       <FooterComponent />
       <Bullets />
-      {/* <Standarts /> */}
+      <Standarts />
       <Services />
       <Apartments />
       <Contacts />

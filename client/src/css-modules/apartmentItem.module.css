@@ -17,6 +17,7 @@
   position: relative;
   border-radius: 0;
   border-color: #bbc6c8;
+  /* border: none; */
 }
 
 .cardImgContainer {
