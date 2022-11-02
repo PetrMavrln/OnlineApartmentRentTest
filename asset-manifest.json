@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnlineApartmentRentTest/static/css/main.2cf4f811.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.949f340c.js",
+    "main.css": "/OnlineApartmentRentTest/static/css/main.e41c8ee1.css",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.37b09815.js",
     "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.ffe3d33ce7daa2813a82.jpg",
     "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.56b41040811c7efa47a5.jpg",
     "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.b4bbe88ac42d4d219645.jpg",
@@ -47,16 +47,23 @@
     "static/media/review1.jpg": "/OnlineApartmentRentTest/static/media/review1.7fb67616c8b94f9da876.jpg",
     "static/media/review36.jpg": "/OnlineApartmentRentTest/static/media/review36.645a11d23c57266085b6.jpg",
     "static/media/review17.jpg": "/OnlineApartmentRentTest/static/media/review17.651958e63dbb9ebf2300.jpg",
+    "static/media/review41.jpg": "/OnlineApartmentRentTest/static/media/review41.29e230525f8db26f1527.jpg",
     "static/media/review5.jpg": "/OnlineApartmentRentTest/static/media/review5.9a9668b73be65df8c4f4.jpg",
     "static/media/review2.jpg": "/OnlineApartmentRentTest/static/media/review2.d5c7eebf749ba509d3b3.jpg",
+    "static/media/kitchen.svg": "/OnlineApartmentRentTest/static/media/kitchen.0648fdb324d6acb8a14c.svg",
     "static/media/buyHouse.svg": "/OnlineApartmentRentTest/static/media/buyHouse.5bf038e4caa472c9f95e.svg",
+    "static/media/cosmetics.svg": "/OnlineApartmentRentTest/static/media/cosmetics.f6d19d50d482963ebf30.svg",
     "static/media/design.svg": "/OnlineApartmentRentTest/static/media/design.975b15ec9bdb88761d4e.svg",
+    "static/media/hairDryer.svg": "/OnlineApartmentRentTest/static/media/hairDryer.e2b2acf5ce0f7b3e7f64.svg",
     "static/media/sellHouse.svg": "/OnlineApartmentRentTest/static/media/sellHouse.908f2ca40d1341192923.svg",
     "static/media/rentHouse.svg": "/OnlineApartmentRentTest/static/media/rentHouse.f8d4f81d2664d9fc6b51.svg",
     "static/media/telegramLogo.svg": "/OnlineApartmentRentTest/static/media/telegramLogo.39173e90c5023260def7a9012f48edf2.svg",
     "static/media/management.svg": "/OnlineApartmentRentTest/static/media/management.c62e9290003ec610a164.svg",
+    "static/media/wifi.svg": "/OnlineApartmentRentTest/static/media/wifi.1ee05201937227e5640a.svg",
+    "static/media/bathroom.svg": "/OnlineApartmentRentTest/static/media/bathroom.a9039fadd1be433074b8.svg",
     "static/media/whatsappLogo.svg": "/OnlineApartmentRentTest/static/media/whatsappLogo.164290c658dddf2e11222440b65767ae.svg",
     "static/media/ratingStar.svg": "/OnlineApartmentRentTest/static/media/ratingStar.febfea7c9b6536e11c74.svg",
+    "static/media/bed.svg": "/OnlineApartmentRentTest/static/media/bed.89cbca19e8c27244ad04.svg",
     "static/media/anonymous.svg": "/OnlineApartmentRentTest/static/media/anonymous.02e9d3fa1d6f98ff24d90692516663f5.svg",
     "static/media/phoneLogo.svg": "/OnlineApartmentRentTest/static/media/phoneLogo.915675a4fe5b126e1af021a8b8a229d7.svg",
     "static/media/location.svg": "/OnlineApartmentRentTest/static/media/location.5ebf9f5c917091adbceb.svg",
@@ -65,11 +72,11 @@
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
-    "main.2cf4f811.css.map": "/OnlineApartmentRentTest/static/css/main.2cf4f811.css.map",
-    "main.949f340c.js.map": "/OnlineApartmentRentTest/static/js/main.949f340c.js.map"
+    "main.e41c8ee1.css.map": "/OnlineApartmentRentTest/static/css/main.e41c8ee1.css.map",
+    "main.37b09815.js.map": "/OnlineApartmentRentTest/static/js/main.37b09815.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cf4f811.css",
-    "static/js/main.949f340c.js"
+    "static/css/main.e41c8ee1.css",
+    "static/js/main.37b09815.js"
   ]
 }
