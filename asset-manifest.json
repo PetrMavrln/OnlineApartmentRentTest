@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnlineApartmentRentTest/static/css/main.e41c8ee1.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.37b09815.js",
+    "main.css": "/OnlineApartmentRentTest/static/css/main.6819f0df.css",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.353acf62.js",
     "static/media/mainImg1.jpg": "/OnlineApartmentRentTest/static/media/mainImg1.ffe3d33ce7daa2813a82.jpg",
     "static/media/mainImg3.jpg": "/OnlineApartmentRentTest/static/media/mainImg3.56b41040811c7efa47a5.jpg",
     "static/media/mainImg7.jpg": "/OnlineApartmentRentTest/static/media/mainImg7.b4bbe88ac42d4d219645.jpg",
@@ -72,11 +72,11 @@
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
-    "main.e41c8ee1.css.map": "/OnlineApartmentRentTest/static/css/main.e41c8ee1.css.map",
-    "main.37b09815.js.map": "/OnlineApartmentRentTest/static/js/main.37b09815.js.map"
+    "main.6819f0df.css.map": "/OnlineApartmentRentTest/static/css/main.6819f0df.css.map",
+    "main.353acf62.js.map": "/OnlineApartmentRentTest/static/js/main.353acf62.js.map"
   },
   "entrypoints": [
-    "static/css/main.e41c8ee1.css",
-    "static/js/main.37b09815.js"
+    "static/css/main.6819f0df.css",
+    "static/js/main.353acf62.js"
   ]
 }
