@@ -9,6 +9,7 @@ import img6 from '../assets/mainPageImgs/mainImg6.jpg';
 import img7 from '../assets/mainPageImgs/mainImg7.jpg';
 import Bullets from '../components/Bullets';
 import FooterComponent from '../components/FooterComponent';
+import PickApartmentsList from '../components/PickApartmentsList';
 import Standarts from '../components/Standarts';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/mainPage.module.css';
@@ -54,7 +55,8 @@ const Main = () => {
       <Bullets />
       <Standarts />
       <Services />
-      <Apartments />
+      <PickApartmentsList />
+      {/* <Apartments /> */}
       <Contacts />
       <About />
       <ScrollToTopBtn />

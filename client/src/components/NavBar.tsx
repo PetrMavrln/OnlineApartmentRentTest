@@ -6,7 +6,7 @@ import {
   // CONTACTS_ROUTE,
   MAIN_ROUTE,
   // PAYMENT_ROUTE,
-  SERVICES_ROUTE,
+  // SERVICES_ROUTE,
   SPECIAL_ROUTE,
   NEWS_ROUTE,
 } from '../utils/consts';

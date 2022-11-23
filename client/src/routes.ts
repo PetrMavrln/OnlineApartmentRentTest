@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import News from './pages/News';
 import Payment from './pages/Payment';
 import Services from './pages/Services';
+import ServicesInfo from './pages/ServicesInfo';
 import Special from './pages/Special';
 import {
   ABOUT_ROUTE,
@@ -15,6 +16,7 @@ import {
   MAIN_ROUTE,
   NEWS_ROUTE,
   PAYMENT_ROUTE,
+  SERVICES_INFO_ROUTE,
   SERVICES_ROUTE,
   SPECIAL_ROUTE,
 } from './utils/consts';
@@ -47,6 +49,10 @@ export const publicRoutes = [
   {
     path: SERVICES_ROUTE,
     Component: Services,
+  },
+  {
+    path: SERVICES_INFO_ROUTE,
+    Component: ServicesInfo,
   },
   {
     path: SPECIAL_ROUTE,

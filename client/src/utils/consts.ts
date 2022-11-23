@@ -5,6 +5,7 @@ export const CONTACTS_ROUTE = '/contacts';
 export const MAIN_ROUTE = '/';
 export const PAYMENT_ROUTE = '/payment';
 export const SERVICES_ROUTE = '/services';
+export const SERVICES_INFO_ROUTE = '/servicesInfo';
 export const NEWS_ROUTE = '/news';
 export const SPECIAL_ROUTE = '/special';
 export const SERVICE_ID = 'service_6gttura';

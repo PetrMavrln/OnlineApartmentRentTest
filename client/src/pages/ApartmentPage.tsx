@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { Button, Card, Carousel, Col, Container, Stack } from 'react-bootstrap';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/apartmentPage.module.css';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchApartments } from '../store/reducers/ActionCreators';
+import { SERVICES_INFO_ROUTE } from '../utils/consts';
 import getFormatedText from '../utils/getFormatedText';
 
 const ApartmentPage = () => {
@@ -16,9 +17,10 @@ const ApartmentPage = () => {
 
   const { id = 1 } = useParams();
 
-  const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
+  const { apartments } = useAppSelector((state) => state.apartmentReducer);
   const apartment = apartments[Number(id) - 1];
 
+  const navigate = useNavigate();
   // -> scroll to top при переходе на страницу товара
   const { pathname } = useLocation();
 
@@ -36,18 +38,23 @@ const ApartmentPage = () => {
         ))}
       </Carousel>
       <Container className={styles.container}>
-        <Stack direction="horizontal">
+        <Stack direction="horizontal" className={styles.colContainer}>
           <Col md={4} className={styles.col}>
             <Card className={styles.card}>
               <div className={styles.cardInfo}>
                 {apartment?.title} <br />
+                <br />
+                Адрес: {apartment?.address} <br />
                 Комнат: {apartment?.rooms} <br />
                 Площадь: {apartment?.square} <br />
-                Количество человек: *нужно добавить* Адрес: *нужно добавить* <br />
+                Количество человек: {apartment?.people} <br />
               </div>
               <Stack className={styles.cardBottom}>
                 <span className={styles.price}>{apartment?.price} руб./сутки</span>
-                <Button variant="dark" className={styles.cardBtn}>
+                <Button
+                  variant="dark"
+                  className={styles.cardBtn}
+                  onClick={() => navigate(SERVICES_INFO_ROUTE)}>
                   Бронировать
                 </Button>
               </Stack>

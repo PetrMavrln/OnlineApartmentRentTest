@@ -1,4 +1,7 @@
 export interface IApartment {
+  address: string;
+  people: string;
+  locationForFilter: string;
   id: number;
   title: string;
   price: number;

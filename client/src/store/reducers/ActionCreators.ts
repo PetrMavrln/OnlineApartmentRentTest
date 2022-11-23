@@ -1,8 +1,11 @@
 import axios from 'axios';
+import { idText } from 'typescript';
 import { IApartment } from '../../models/IApartment';
 import { IReview } from '../../models/IReview';
 import { AppDispatch } from '../store';
 import { apartmentSlice } from './ApartmentSlice';
+import { cardTitleSlice } from './CardTitleSlice';
+import { filteredApartmentsSlice } from './FilteredApartmentsSlice';
 import { reviewSlice } from './ReviewSlice';
 
 export const fetchApartments = () => async (dispatch: AppDispatch) => {
@@ -27,4 +30,12 @@ export const fetchReviews = () => async (dispatch: AppDispatch) => {
   } catch (e: any) {
     dispatch(reviewSlice.actions.reviewsFetchingError(e.message));
   }
+};
+
+export const fetchCardTitle = (title: string) => (dispatch: AppDispatch) => {
+  dispatch(cardTitleSlice.actions.getCardTitleSuccess(title));
+};
+
+export const fetchFilteredApartments = (arr: IApartment[]) => (dispatch: AppDispatch) => {
+  dispatch(filteredApartmentsSlice.actions.getFilteredApartments(arr));
 };

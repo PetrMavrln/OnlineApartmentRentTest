@@ -1,5 +1,5 @@
 .container {
-  padding: 0 0 80px 0;
+  padding: 80px 0 80px 0;
   width: 1200px;
 }
 
@@ -20,17 +20,31 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
   .container {
     width: 880px;
   }
+  .header {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .container {
     width: 624px;
+  }
+  .header {
+    font-size: 24px;
   }
 }
 
@@ -46,10 +60,20 @@
     flex-direction: column;
     width: 1150px;
   }
+  .header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .container {
     width: 308px;
+  }
+  .header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
   }
 }

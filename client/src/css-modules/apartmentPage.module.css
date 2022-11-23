@@ -140,6 +140,11 @@
   .container {
     width: 368px;
   }
+
+  .colContainer {
+    flex-direction: column;
+  }
+
   .header {
     font-size: 18px;
   }
@@ -154,6 +159,15 @@
 
   .price {
     font-size: 18px;
+  }
+
+  .card {
+    width: 368px;
+  }
+
+  .apartCol .card {
+    margin-top: -30px;
+    margin-left: -61px;
   }
 
   .cardInfo,
@@ -175,6 +189,18 @@
 @media screen and (max-width: 767px) {
   .container {
     width: 308px;
+  }
+
+  .colContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 308px;
+  }
+
+  .apartCol .card {
+    margin-top: -30px;
   }
 
   .header {

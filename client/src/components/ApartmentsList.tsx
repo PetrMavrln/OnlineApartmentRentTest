@@ -1,15 +1,28 @@
+import { useEffect } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import styles from '../css-modules/apartments.module.css';
-import { useAppSelector } from '../hooks/redux';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { fetchFilteredApartments } from '../store/reducers/ActionCreators';
 import ApartmentItem from './ApartmentItem';
-import FiltersComponent from './FiltersComponent';
 
 const ApartmentsList = () => {
+  const dispatch = useAppDispatch();
   const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
+  const cardTitle = useAppSelector((state) => state.cardTitleReducer.title); //достаю title из storage
+
+  let filtered = apartments.filter((apart) => apart.locationForFilter === cardTitle); //фильтрую массив по id
+
+  useEffect(() => {
+    dispatch(fetchFilteredApartments(filtered));
+  }, []);
+
+  const { filteredApartments } = useAppSelector((state) => state.filteredApartmentsReducer);
+  // console.log(filteredApartments);
 
   return (
     <Container className={styles.container}>
       {/* <FiltersComponent /> */}
+      <h2 className={styles.header}>Доступные апартаменыт в категории "{cardTitle}"</h2>
       <div>
         {isLoading ? (
           <div className={styles.spinner}>
@@ -17,7 +30,7 @@ const ApartmentsList = () => {
           </div>
         ) : (
           <Row className={styles.row}>
-            {apartments.map((apartment) => (
+            {filtered.map((apartment) => (
               <ApartmentItem key={apartment.id} apartment={apartment} />
             ))}
           </Row>

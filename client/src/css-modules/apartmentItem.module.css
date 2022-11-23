@@ -34,12 +34,12 @@
   /* padding-bottom: 5px; */
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
-  transition: -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
-  -o-transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
-  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
-  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1),
-    -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  -o-transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1),
+    -webkit-transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .cardItem:hover .cardImg {
