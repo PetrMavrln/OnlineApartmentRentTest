@@ -7,7 +7,7 @@ import { IPickApartmentsCard } from '../models/IPickApartmentsCard';
 import { fetchCardTitle, fetchFilteredApartments } from '../store/reducers/ActionCreators';
 import { APARTMENTS_ROUTE } from '../utils/consts';
 
-const PickApartmentsCard = ({ apartment }: { apartment: IPickApartmentsCard }) => {
+const PickApartmentsCard = ({ card }: { card: IPickApartmentsCard }) => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
@@ -16,18 +16,18 @@ const PickApartmentsCard = ({ apartment }: { apartment: IPickApartmentsCard }) =
       <Card
         className={styles.card}
         onClick={() => {
-          dispatch(fetchCardTitle(apartment.title)); //сохраняю title в store
+          dispatch(fetchCardTitle(card.title)); //сохраняю title в store
           navigate(APARTMENTS_ROUTE);
         }}>
         <Image
           className={styles.img}
           width={378}
           height={378}
-          src={require('../' + apartment.img)}
-          alt={`${apartment.title}`}></Image>
+          src={require('../' + card.img)}
+          alt={`${card.title}`}></Image>
         <div className={styles.textBlock}>
-          <h2 className={styles.title}>{apartment.title}</h2>
-          <p className={styles.description}>{apartment.description}</p>
+          <h2 className={styles.title}>{card.title}</h2>
+          <p className={styles.description}>{card.description}</p>
         </div>
       </Card>
     </Col>

@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import apartmentReducer from '../store/reducers/ApartmentSlice';
-import reviewReducer from '../store/reducers/ReviewSlice';
 import cardTitleReducer from '../store/reducers/CardTitleSlice';
 import filteredApartmentsReducer from '../store/reducers/FilteredApartmentsSlice';
+import reviewReducer from '../store/reducers/ReviewSlice';
 import storage from 'redux-persist/lib/storage';
 import {
   FLUSH,
@@ -31,6 +31,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const setupStore = () => {
   return configureStore({
+    // reducer: rootReducer,
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({

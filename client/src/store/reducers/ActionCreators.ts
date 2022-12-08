@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { idText } from 'typescript';
 import { IApartment } from '../../models/IApartment';
 import { IReview } from '../../models/IReview';
 import { AppDispatch } from '../store';
@@ -11,6 +10,7 @@ import { reviewSlice } from './ReviewSlice';
 export const fetchApartments = () => async (dispatch: AppDispatch) => {
   let url =
     'https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/apartments.json';
+  // 'https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/apartments2.json';
   try {
     dispatch(apartmentSlice.actions.apartmentsFetching());
     const response = await axios.get<IApartment[]>(url);

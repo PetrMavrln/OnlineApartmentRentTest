@@ -19,14 +19,14 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
             className={styles.cardImg}
             // width={296}
             // height={153}
-            src={require('../' + apartment?.img[apartment?.id])}
+            src={require('../' + apartment?.img[apartment?.id - apartment?.id + 1])} //TODO исправить эту шляпу
             alt="apartment img"></Image>
         </div>
         <Stack direction="horizontal" className={styles.cardBottom}>
           <b>{'от ' + apartment.price + ' ₽ в сутки'}</b>
-          <Button variant="dark" className={styles.cardBtn}>
+          {/* <Button variant="dark" className={styles.cardBtn}>
             Подробнее
-          </Button>
+          </Button> */}
         </Stack>
         <Stack className={styles.cardItemInfoWrapper}>
           <span className={styles.cardItemInfo}>Комнат: {apartment.rooms}</span>
@@ -36,6 +36,7 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
             <span className={styles.cardItemInfo}></span>
           )}
           <span className={styles.cardItemInfo}>Площадь: {apartment.square}</span>
+          <span className={styles.cardItemInfo}>Кол-во человек: {apartment.people}</span>
         </Stack>
       </Card>
     </Col>
