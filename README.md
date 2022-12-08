@@ -1,4 +1,4 @@
-Магазин аренды квартир [in progress]
+Сайт аренды квартир [in progress]
 
 React, Redux, TypeScript
 
