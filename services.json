@@ -1,0 +1,22 @@
+[
+  {
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/services/rentHouse.svg",
+    "title": "Аренда",
+    "description": "Возможность арендовать апартаменты, дом на определенный период времени"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/services/buyHouse.svg",
+    "title": "Покупка",
+    "description": "Предложения по покупке апартаментов, домов, участков земли"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/services/sellHouse.svg",
+    "title": "Продажа",
+    "description": "Продажа апартаментов, домов, участков земли в кротчайшие сроки"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/services/management.svg",
+    "title": "Доверительное управление",
+    "description": "Вы можете сдать свои дома, квартиры или апартаменты нам в управление"
+  }
+]
