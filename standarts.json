@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "img": "assets/standarts/kitchen.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/kitchen.svg",
     "title": "Кухня"
   },
   {
     "id": 2,
-    "img": "assets/standarts/bed.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/bed.svg",
     "title": "Большая кровать"
   },
   {
     "id": 3,
-    "img": "assets/standarts/cosmetics.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/cosmetics.svg",
     "title": "Комплект косметических принадлежностей"
   },
   {
     "id": 4,
-    "img": "assets/standarts/hairDryer.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/hairDryer.svg",
     "title": "Фен и гладильные принадлежности"
   },
   {
     "id": 5,
-    "img": "assets/standarts/wifi.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/wifi.svg",
     "title": "Бесплатный Wi-Fi"
   },
   {
     "id": 6,
-    "img": "assets/standarts/bathroom.svg",
+    "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/standarts/bathroom.svg",
     "title": "Ванная комната"
   }
 ]
