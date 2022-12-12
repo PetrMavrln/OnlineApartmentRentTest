@@ -27,19 +27,34 @@ const Socials = () => {
       <br />
       <ul className={styles.socialsWrapper}>
         <li className={iconFb}>
-          <img src={vkLogo} alt="VK"></img>
+          <a href="https://vk.com/club216604382" target="_blank" rel="noreferrer">
+            <img src={vkLogo} alt="VK"></img>
+          </a>
         </li>
         <li className={iconInst}>
-          <img src={instLogo} alt="Inst"></img>
+          <a
+            href="https://instagram.com/kds_posutka?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            rel="noreferrer">
+            <img src={instLogo} alt="Inst"></img>
+          </a>
         </li>
         <li className={iconWhatsapp}>
-          <img src={whatsappLogo} alt="Whatsapp"></img>
+          <a
+            href="https://api.whatsapp.com/send?phone=79063111825"
+            target="_blank"
+            rel="noreferrer">
+            <img src={whatsappLogo} alt="Whatsapp"></img>
+          </a>
         </li>
         <li className={iconTiktok}>
           <img src={tiktokLogo} alt="Tiktok"></img>
         </li>
+
         <li className={iconTelegram}>
-          <img src={telegramLogo} alt="Telegram"></img>
+          <a href="https://t.me/Nikita_Lopatin" target="_blank" rel="noreferrer">
+            <img src={telegramLogo} alt="Telegram"></img>
+          </a>
         </li>
       </ul>
       {/* <Stack direction="horizontal">

@@ -3,6 +3,10 @@ import apartmentReducer from '../store/reducers/ApartmentSlice';
 import cardTitleReducer from '../store/reducers/CardTitleSlice';
 import filteredApartmentsReducer from '../store/reducers/FilteredApartmentsSlice';
 import reviewReducer from '../store/reducers/ReviewSlice';
+import mainPageImgsReducer from '../store/reducers/MainPageImgsSlice';
+import pickApartmentsReducer from '../store/reducers/PickApartmentsSlice';
+import serviceReducer from '../store/reducers/ServicesSlice';
+import standartReducer from '../store/reducers/StandartsSlice';
 import storage from 'redux-persist/lib/storage';
 import {
   FLUSH,
@@ -20,6 +24,10 @@ const rootReducer = combineReducers({
   reviewReducer,
   cardTitleReducer,
   filteredApartmentsReducer,
+  mainPageImgsReducer,
+  pickApartmentsReducer,
+  serviceReducer,
+  standartReducer,
 });
 
 const persistConfig = {

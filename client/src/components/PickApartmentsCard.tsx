@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
 import { Card, Col, Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import styles from '../css-modules/pickApartmentsCard.module.css';
-import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { useAppDispatch } from '../hooks/redux';
 import { IPickApartmentsCard } from '../models/IPickApartmentsCard';
-import { fetchCardTitle, fetchFilteredApartments } from '../store/reducers/ActionCreators';
+import { fetchCardTitle } from '../store/reducers/ActionCreators';
 import { APARTMENTS_ROUTE } from '../utils/consts';
 
 const PickApartmentsCard = ({ card }: { card: IPickApartmentsCard }) => {
@@ -23,7 +22,7 @@ const PickApartmentsCard = ({ card }: { card: IPickApartmentsCard }) => {
           className={styles.img}
           width={378}
           height={378}
-          src={require('../' + card.img)}
+          src={card.imgUrl}
           alt={`${card.title}`}></Image>
         <div className={styles.textBlock}>
           <h2 className={styles.title}>{card.title}</h2>

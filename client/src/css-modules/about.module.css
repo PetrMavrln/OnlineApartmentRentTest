@@ -24,6 +24,8 @@
   transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
   transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1),
     -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
+  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1),
+    -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
 }
 
 .logo:hover {
@@ -54,6 +56,8 @@
   transition: -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
   -o-transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
   transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
+  transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1),
+    -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
   transition: transform 1.5s cubic-bezier(0.61, 1, 0.88, 1),
     -webkit-transform 1.5s cubic-bezier(0.61, 1, 0.88, 1);
 }

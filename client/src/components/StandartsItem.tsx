@@ -11,7 +11,7 @@ const StandartsItem = ({ standart }: { standart: IStandart }) => {
           className={styles.img}
           width={40}
           height={40}
-          src={require('../' + standart.img)}
+          src={standart.img}
           alt={`${standart.title}`}></Image>
         <h4 className={styles.title}>{standart.title}</h4>
       </div>

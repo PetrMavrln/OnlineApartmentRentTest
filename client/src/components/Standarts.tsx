@@ -1,41 +1,18 @@
-import React from 'react';
-import { Container, Row, Stack } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Container, Row, Spinner, Stack } from 'react-bootstrap';
 import styles from '../css-modules/standarts.module.css';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { fetchStandarts } from '../store/reducers/ActionCreators';
 import StandartsItem from './StandartsItem';
 
 const Standarts = () => {
-  const standarts = [
-    {
-      id: 1,
-      img: 'assets/standarts/kitchen.svg',
-      title: 'Кухня',
-    },
-    {
-      id: 2,
-      img: 'assets/standarts/bed.svg',
-      title: 'Большая кровать',
-    },
-    {
-      id: 3,
-      img: 'assets/standarts/cosmetics.svg',
-      title: 'Комплект косметических принадлежностей',
-    },
-    {
-      id: 4,
-      img: 'assets/standarts/hairDryer.svg',
-      title: 'Фен и гладильные принадлежности',
-    },
-    {
-      id: 5,
-      img: 'assets/standarts/wifi.svg',
-      title: 'Бесплатный Wi-Fi',
-    },
-    {
-      id: 6,
-      img: 'assets/standarts/bathroom.svg',
-      title: 'Ванная комната',
-    },
-  ];
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchStandarts());
+  }, []);
+
+  const { standarts, isLoading } = useAppSelector((state) => state.standartReducer);
 
   return (
     <div className={styles.wrapper}>
@@ -44,11 +21,17 @@ const Standarts = () => {
           <h2>У нас действет единый стандарт качества для апартаментов</h2>
           <h5>В каждой квартире есть:</h5>
         </div>
-        <Stack direction="horizontal" className={styles.stack}>
-          {standarts.map((standart) => (
-            <StandartsItem key={standart.id} standart={standart} />
-          ))}
-        </Stack>
+        {isLoading ? (
+          <div className={styles.spinner}>
+            <Spinner animation="grow" variant="info" />
+          </div>
+        ) : (
+          <Stack direction="horizontal" className={styles.stack}>
+            {standarts.map((standart) => (
+              <StandartsItem key={standart.id} standart={standart} />
+            ))}
+          </Stack>
+        )}
       </Container>
     </div>
   );

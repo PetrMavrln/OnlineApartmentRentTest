@@ -31,12 +31,7 @@ const ServiceCard = ({
             navigate(SERVICES_INFO_ROUTE);
           }
         }}>
-        <Image
-          className={styles.img}
-          width={153}
-          height={153}
-          src={require('../' + img)}
-          alt={`${title}`}></Image>
+        <Image className={styles.img} width={153} height={153} src={img} alt={`${title}`}></Image>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
       </Card>

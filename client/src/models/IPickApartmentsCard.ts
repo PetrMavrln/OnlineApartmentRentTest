@@ -1,6 +1,6 @@
 export interface IPickApartmentsCard {
   id: number;
-  img: string;
+  imgUrl: string;
   title: string;
   description: string;
 }

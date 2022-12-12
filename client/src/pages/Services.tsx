@@ -1,48 +1,40 @@
-import React, { useState } from 'react';
-import { Container, Row, Stack } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { Container, Spinner, Stack } from 'react-bootstrap';
+import { Element } from 'react-scroll';
 import ServiceCard from '../components/ServiceCard';
 import styles from '../css-modules/servicesPage.module.css';
-import { Element } from 'react-scroll';
-import { InView } from 'react-intersection-observer';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { fetchServices } from '../store/reducers/ActionCreators';
 
 const Services = () => {
-  const services = [
-    {
-      img: 'assets/services/rentHouse.svg',
-      title: 'Аренда',
-      description: 'Возможность арендовать апартаменты, дом на определенный период времени',
-    },
-    {
-      img: 'assets/services/buyHouse.svg',
-      title: 'Покупка',
-      description: 'Предложения по покупке апартаментов, домов, участков земли',
-    },
-    {
-      img: 'assets/services/sellHouse.svg',
-      title: 'Продажа',
-      description: 'Продажа апартаментов, домов, участков земли в кротчайшие сроки',
-    },
-    {
-      img: 'assets/services/management.svg',
-      title: 'Доверительное управление',
-      description: 'Вы можете сдать свои дома, квартиры или апартаменты нам в управление',
-    },
-  ];
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchServices());
+  }, []);
+
+  const { services, isLoading } = useAppSelector((state) => state.serviceReducer);
 
   return (
     <Element name="services">
       <Container className={styles.container}>
         <h1 className={styles.header}>Наши услуги</h1>
-        <Stack direction="horizontal" className={styles.cardsWrapper}>
-          {services.map((service) => (
-            <ServiceCard
-              img={service.img}
-              title={service.title}
-              description={service.description}
-              key={service.img} //key должен быть разный!
-            />
-          ))}
-        </Stack>
+        {isLoading ? (
+          <div className={styles.spinner}>
+            <Spinner animation="grow" variant="info" />
+          </div>
+        ) : (
+          <Stack direction="horizontal" className={styles.cardsWrapper}>
+            {services.map((service) => (
+              <ServiceCard
+                img={service.img}
+                title={service.title}
+                description={service.description}
+                key={service.img} //key должен быть разный!
+              />
+            ))}
+          </Stack>
+        )}
       </Container>
     </Element>
   );

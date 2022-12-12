@@ -19,7 +19,7 @@ const ApartmentItem = ({ apartment }: { apartment: IApartment }) => {
             className={styles.cardImg}
             // width={296}
             // height={153}
-            src={require('../' + apartment?.img[apartment?.id - apartment?.id + 1])} //TODO исправить эту шляпу
+            src={apartment?.img[apartment?.id - apartment?.id + 1]} //TODO исправить эту шляпу
             alt="apartment img"></Image>
         </div>
         <Stack direction="horizontal" className={styles.cardBottom}>

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Button, Card, Carousel, Col, Container, Stack } from 'react-bootstrap';
+import { Button, Card, Carousel, Col, Container, Spinner, Stack } from 'react-bootstrap';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/apartmentPage.module.css';
@@ -17,7 +17,7 @@ const ApartmentPage = () => {
 
   const { id = 1 } = useParams();
 
-  const { apartments } = useAppSelector((state) => state.apartmentReducer);
+  const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
   const apartment = apartments[Number(id) - 1];
 
   const navigate = useNavigate();
@@ -30,13 +30,20 @@ const ApartmentPage = () => {
   // <-
   return (
     <div>
-      <Carousel className={styles.carousel}>
-        {apartment?.img.map((imgSrc) => (
-          <Carousel.Item interval={3000} key={apartment.img.indexOf(imgSrc)}>
-            <img className={styles.img} src={require('../' + imgSrc)} alt="Фото квартиры" />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      {isLoading ? (
+        <div className={styles.spinner}>
+          <Spinner animation="grow" variant="info" />
+        </div>
+      ) : (
+        <Carousel className={styles.carousel}>
+          {apartment?.img.map((imgSrc) => (
+            <Carousel.Item interval={3000} key={apartment.img.indexOf(imgSrc)}>
+              <img className={styles.img} src={imgSrc} alt="Фото квартиры" />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      )}
+
       <Container className={styles.container}>
         <Stack direction="horizontal" className={styles.colContainer}>
           <Col md={4} className={styles.col}>

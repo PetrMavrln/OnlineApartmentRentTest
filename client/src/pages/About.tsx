@@ -37,7 +37,7 @@ const About = () => {
         <h2 className={styles.review}>Отзывы</h2>
         {isLoading ? (
           <div className={styles.spinner}>
-            <Spinner animation="border" />
+            <Spinner animation="grow" variant="info" />
             {/* TODO центрировать спинер */}
           </div>
         ) : (
@@ -45,9 +45,13 @@ const About = () => {
             {reviews?.map((review: IReview) => (
               <Carousel.Item key={review.id}>
                 {review.img === '' ? (
-                  <img src={anonymous} alt="Фото пользователя"></img>
+                  <img
+                    src={
+                      'https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/reviews/anonymous.svg'
+                    }
+                    alt="Фото пользователя"></img>
                 ) : (
-                  <img src={require('../' + review.img)} alt="Фото пользователя"></img>
+                  <img src={review.img} alt="Фото пользователя"></img>
                 )}
                 <h5>{review.title}</h5>
                 <p>{review.description}</p>

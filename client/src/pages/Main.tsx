@@ -1,52 +1,44 @@
 import classNames from 'classnames';
-import { Carousel } from 'react-bootstrap';
-import img1 from '../assets/mainPageImgs/mainImg1.jpg';
-import img2 from '../assets/mainPageImgs/mainImg2.jpg';
-import img3 from '../assets/mainPageImgs/mainImg3.jpg';
-import img4 from '../assets/mainPageImgs/mainImg4.jpg';
-import img5 from '../assets/mainPageImgs/mainImg5.jpg';
-import img6 from '../assets/mainPageImgs/mainImg6.jpg';
-import img7 from '../assets/mainPageImgs/mainImg7.jpg';
+import { useEffect } from 'react';
+import { Carousel, Spinner } from 'react-bootstrap';
 import Bullets from '../components/Bullets';
 import FooterComponent from '../components/FooterComponent';
 import PickApartmentsList from '../components/PickApartmentsList';
 import Standarts from '../components/Standarts';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/mainPage.module.css';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { fetchMainPageImgs } from '../store/reducers/ActionCreators';
 import About from './About';
-import Apartments from './Apartments';
 import Contacts from './Contacts';
 import Services from './Services';
 
 const Main = () => {
   let bgImgComb = classNames('d-block', styles.carouselImg);
 
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchMainPageImgs());
+  }, []);
+
+  const { mainPageImgs, isLoading } = useAppSelector((state) => state.mainPageImgsReducer);
+
   return (
-    // TODO сделать компонент с каруселью
     <div className={styles.wrapper}>
-      <Carousel indicators={false}>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img1} alt="Первый слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img2} alt="Второй слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img3} alt="Третий слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img4} alt="Четвертый слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img5} alt="Пятый слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img6} alt="Шестой слайд" />
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-          <img className={bgImgComb} src={img7} alt="Седьмой слайд" />
-        </Carousel.Item>
-      </Carousel>
+      {isLoading ? (
+        <div className={styles.spinner}>
+          <Spinner animation="grow" variant="info" />
+        </div>
+      ) : (
+        <Carousel indicators={false}>
+          {mainPageImgs.map((mainPageImg) => (
+            <Carousel.Item interval={3000} key={mainPageImg.id}>
+              <img className={bgImgComb} src={mainPageImg.imgUrl} alt="Фото на главной" />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      )}
       <div className={styles.headerContainer}>
         <h1 className={styles.header}>КакДляСебя</h1>
         <h2 className={styles.subHeader}>посуточная сдача квартир</h2>
