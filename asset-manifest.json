@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/OnlineApartmentRentTest/static/css/main.f7ed144d.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.4dfd74d3.js",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.17c67bac.js",
     "static/media/logo.png": "/OnlineApartmentRentTest/static/media/logo.96517255de88189bd4a6.png",
     "static/media/design.svg": "/OnlineApartmentRentTest/static/media/design.975b15ec9bdb88761d4e.svg",
     "static/media/telegramLogo.svg": "/OnlineApartmentRentTest/static/media/telegramLogo.39173e90c5023260def7a9012f48edf2.svg",
     "static/media/whatsappLogo.svg": "/OnlineApartmentRentTest/static/media/whatsappLogo.164290c658dddf2e11222440b65767ae.svg",
     "static/media/ratingStar.svg": "/OnlineApartmentRentTest/static/media/ratingStar.febfea7c9b6536e11c74.svg",
     "static/media/phoneLogo.svg": "/OnlineApartmentRentTest/static/media/phoneLogo.915675a4fe5b126e1af021a8b8a229d7.svg",
-    "static/media/location.svg": "/OnlineApartmentRentTest/static/media/location.5ebf9f5c917091adbceb.svg",
     "index.html": "/OnlineApartmentRentTest/index.html",
+    "static/media/location.svg": "/OnlineApartmentRentTest/static/media/location.5ebf9f5c917091adbceb.svg",
     "static/media/house.svg": "/OnlineApartmentRentTest/static/media/house.6bab8a5884eec460d684.svg",
     "static/media/instLogo.svg": "/OnlineApartmentRentTest/static/media/instLogo.53cded02bdb5aafdbb7e3902b3451abb.svg",
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
     "main.f7ed144d.css.map": "/OnlineApartmentRentTest/static/css/main.f7ed144d.css.map",
-    "main.4dfd74d3.js.map": "/OnlineApartmentRentTest/static/js/main.4dfd74d3.js.map"
+    "main.17c67bac.js.map": "/OnlineApartmentRentTest/static/js/main.17c67bac.js.map"
   },
   "entrypoints": [
     "static/css/main.f7ed144d.css",
-    "static/js/main.4dfd74d3.js"
+    "static/js/main.17c67bac.js"
   ]
 }
