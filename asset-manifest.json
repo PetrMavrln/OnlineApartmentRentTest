@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OnlineApartmentRentTest/static/css/main.f7ed144d.css",
-    "main.js": "/OnlineApartmentRentTest/static/js/main.7aaf0ab2.js",
+    "main.js": "/OnlineApartmentRentTest/static/js/main.17c67bac.js",
     "static/media/logo.png": "/OnlineApartmentRentTest/static/media/logo.96517255de88189bd4a6.png",
     "static/media/design.svg": "/OnlineApartmentRentTest/static/media/design.975b15ec9bdb88761d4e.svg",
     "static/media/telegramLogo.svg": "/OnlineApartmentRentTest/static/media/telegramLogo.39173e90c5023260def7a9012f48edf2.svg",
@@ -15,10 +15,10 @@
     "static/media/vkLogo.svg": "/OnlineApartmentRentTest/static/media/vkLogo.f9aebd5566abb4497c91b056e581f8c3.svg",
     "static/media/tiktokLogo.svg": "/OnlineApartmentRentTest/static/media/tiktokLogo.f373d73ff6f1cb59e5712b50e77ae250.svg",
     "main.f7ed144d.css.map": "/OnlineApartmentRentTest/static/css/main.f7ed144d.css.map",
-    "main.7aaf0ab2.js.map": "/OnlineApartmentRentTest/static/js/main.7aaf0ab2.js.map"
+    "main.17c67bac.js.map": "/OnlineApartmentRentTest/static/js/main.17c67bac.js.map"
   },
   "entrypoints": [
     "static/css/main.f7ed144d.css",
-    "static/js/main.7aaf0ab2.js"
+    "static/js/main.17c67bac.js"
   ]
 }
