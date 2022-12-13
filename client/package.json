@@ -62,7 +62,6 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.4",
-    "@types/redux-persist": "^4.3.1",
-    "react-snap": "^1.23.0"
+    "@types/redux-persist": "^4.3.1"
   }
 }
