@@ -8,7 +8,6 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     // <BrowserRouter>
-    //   TODO использовать router-dom
     <HashRouter>
       <NavBar />
       <Helmet>
