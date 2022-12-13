@@ -4,18 +4,11 @@ import { Helmet } from 'react-helmet';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/apartmentPage.module.css';
-import { useAppDispatch, useAppSelector } from '../hooks/redux';
-import { fetchApartments } from '../store/reducers/ActionCreators';
+import { useAppSelector } from '../hooks/redux';
 import { SERVICES_INFO_ROUTE } from '../utils/consts';
 import getFormatedText from '../utils/getFormatedText';
 
 const ApartmentPage = () => {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(fetchApartments());
-  }, []);
-
   const { id = 1 } = useParams();
 
   const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);

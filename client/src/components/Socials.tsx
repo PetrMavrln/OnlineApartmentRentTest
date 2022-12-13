@@ -1,21 +1,25 @@
 import classNames from 'classnames';
-import React from 'react';
-import { Col, Stack } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { Col, Spinner, Stack } from 'react-bootstrap';
 import styles from '../css-modules/contactsPage.module.css';
-import vkLogo from '../assets/contacts/vkLogo.svg';
-import instLogo from '../assets/contacts/instLogo.svg';
-import mailLogo from '../assets/contacts/mailLogo.svg';
-import phoneLogo from '../assets/contacts/phoneLogo.svg';
-import whatsappLogo from '../assets/contacts/whatsappLogo.svg';
-import tiktokLogo from '../assets/contacts/tiktokLogo.svg';
-import telegramLogo from '../assets/contacts/telegramLogo.svg';
-
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
+import { fetchSocials } from '../store/reducers/ActionCreators';
+import phoneLogo from '../assets/phoneLogo.svg';
 const Socials = () => {
-  let iconFb = classNames(styles.icon, styles.facebook);
-  let iconInst = classNames(styles.icon, styles.instagram);
-  let iconWhatsapp = classNames(styles.icon, styles.whatsapp);
-  let iconTiktok = classNames(styles.icon, styles.tiktok);
-  let iconTelegram = classNames(styles.icon, styles.telegram);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchSocials());
+  }, []);
+
+  const { socials, isLoading } = useAppSelector((state) => state.socialReducer);
+
+  const vkLogo = classNames(styles.icon, styles.facebook);
+  const instLogo = classNames(styles.icon, styles.instagram);
+  const whatsappLogo = classNames(styles.icon, styles.whatsapp);
+  const tiktokLogo = classNames(styles.icon, styles.tiktok);
+  const telegramLogo = classNames(styles.icon, styles.telegram);
+  const youtubeLogo = classNames(styles.icon, styles.youtube);
 
   return (
     <Col md={7} className={styles.col}>
@@ -25,38 +29,50 @@ const Socials = () => {
         через социальные сети.
       </p>
       <br />
-      <ul className={styles.socialsWrapper}>
-        <li className={iconFb}>
-          <a href="https://vk.com/club216604382" target="_blank" rel="noreferrer">
-            <img src={vkLogo} alt="VK"></img>
-          </a>
-        </li>
-        <li className={iconInst}>
-          <a
-            href="https://instagram.com/kds_posutka?igshid=YmMyMTA2M2Y="
-            target="_blank"
-            rel="noreferrer">
-            <img src={instLogo} alt="Inst"></img>
-          </a>
-        </li>
-        <li className={iconWhatsapp}>
-          <a
-            href="https://api.whatsapp.com/send?phone=79063111825"
-            target="_blank"
-            rel="noreferrer">
-            <img src={whatsappLogo} alt="Whatsapp"></img>
-          </a>
-        </li>
-        <li className={iconTiktok}>
-          <img src={tiktokLogo} alt="Tiktok"></img>
-        </li>
-
-        <li className={iconTelegram}>
-          <a href="https://t.me/Nikita_Lopatin" target="_blank" rel="noreferrer">
-            <img src={telegramLogo} alt="Telegram"></img>
-          </a>
-        </li>
-      </ul>
+      {isLoading ? (
+        <div className={styles.spinner}>
+          <Spinner animation="grow" variant="info" />
+        </div>
+      ) : (
+        //TODO сделать нормально через SocialItem
+        // <ul className={styles.socialsWrapper}>
+        //   {socials?.map((social) => (
+        //     <SocialItem key={social.id} social={social} />
+        //   ))}
+        // </ul>
+        <ul className={styles.socialsWrapper}>
+          <li className={vkLogo}>
+            <a href={socials[0].href} target="_blank" rel="noreferrer">
+              <img src={socials[0].img} alt={socials[0].alt}></img>
+            </a>
+          </li>
+          <li className={instLogo}>
+            <a href={socials[1].href} target="_blank" rel="noreferrer">
+              <img src={socials[1].img} alt={socials[1].alt}></img>
+            </a>
+          </li>
+          <li className={whatsappLogo}>
+            <a href={socials[2].href} target="_blank" rel="noreferrer">
+              <img src={socials[2].img} alt={socials[2].alt}></img>
+            </a>
+          </li>
+          <li className={tiktokLogo}>
+            <a href={socials[3].href} target="_blank" rel="noreferrer">
+              <img src={socials[3].img} alt={socials[3].alt}></img>
+            </a>
+          </li>
+          <li className={telegramLogo}>
+            <a href={socials[4].href} target="_blank" rel="noreferrer">
+              <img src={socials[4].img} alt={socials[4].alt}></img>
+            </a>
+          </li>
+          <li className={youtubeLogo}>
+            <a href={socials[5].href} target="_blank" rel="noreferrer">
+              <img src={socials[5].img} alt={socials[5].alt}></img>
+            </a>
+          </li>
+        </ul>
+      )}
       {/* <Stack direction="horizontal">
     <img className={styles.mail} src={mailLogo} alt="почта"></img>
     <a href="mailto:mail@mail.ru">nekita.lopatin1993@yandex.ru</a>

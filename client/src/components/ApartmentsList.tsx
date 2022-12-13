@@ -1,23 +1,13 @@
-import { useEffect } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import styles from '../css-modules/apartments.module.css';
-import { useAppDispatch, useAppSelector } from '../hooks/redux';
-import { fetchFilteredApartments } from '../store/reducers/ActionCreators';
+import { useAppSelector } from '../hooks/redux';
 import ApartmentItem from './ApartmentItem';
 
 const ApartmentsList = () => {
-  const dispatch = useAppDispatch();
   const { apartments, isLoading } = useAppSelector((state) => state.apartmentReducer);
   const cardTitle = useAppSelector((state) => state.cardTitleReducer.title); //достаю title из storage
 
   const filtered = apartments.filter((apart) => apart.locationForFilter === cardTitle); //фильтрую массив по title
-
-  useEffect(() => {
-    dispatch(fetchFilteredApartments(filtered));
-  }, []);
-
-  // const { filteredApartments } = useAppSelector((state) => state.filteredApartmentsReducer);
-  // console.log(filteredApartments);
 
   return (
     <Container className={styles.container}>

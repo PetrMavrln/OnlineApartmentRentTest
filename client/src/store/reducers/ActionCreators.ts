@@ -4,15 +4,16 @@ import { IMainPageImgs } from '../../models/IMainPageImg';
 import { IPickApartmentsCard } from '../../models/IPickApartmentsCard';
 import { IReview } from '../../models/IReview';
 import { IService } from '../../models/IService';
+import { ISocial } from '../../models/ISocial';
 import { IStandart } from '../../models/IStandart';
 import { AppDispatch } from '../store';
 import { apartmentSlice } from './ApartmentSlice';
 import { cardTitleSlice } from './CardTitleSlice';
-import { filteredApartmentsSlice } from './FilteredApartmentsSlice';
 import { mainPageImgsSlice } from './MainPageImgsSlice';
 import { pickApartmentsSlice } from './PickApartmentsSlice';
 import { reviewSlice } from './ReviewSlice';
 import { serviceSlice } from './ServicesSlice';
+import { socialSlice } from './SocialsSlice';
 import { standartSlice } from './StandartsSlice';
 
 export const fetchApartments = () => async (dispatch: AppDispatch) => {
@@ -87,10 +88,18 @@ export const fetchStandarts = () => async (dispatch: AppDispatch) => {
   }
 };
 
-export const fetchCardTitle = (title: string) => (dispatch: AppDispatch) => {
-  dispatch(cardTitleSlice.actions.getCardTitleSuccess(title));
+export const fetchSocials = () => async (dispatch: AppDispatch) => {
+  let url =
+    'https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/socials.json';
+  try {
+    dispatch(socialSlice.actions.socialFetching());
+    const response = await axios.get<ISocial[]>(url);
+    dispatch(socialSlice.actions.socialFetchingSuccess(response.data));
+  } catch (e: any) {
+    dispatch(socialSlice.actions.socialFetchingError(e.message));
+  }
 };
 
-export const fetchFilteredApartments = (arr: IApartment[]) => (dispatch: AppDispatch) => {
-  dispatch(filteredApartmentsSlice.actions.getFilteredApartments(arr));
+export const fetchCardTitle = (title: string) => (dispatch: AppDispatch) => {
+  dispatch(cardTitleSlice.actions.getCardTitleSuccess(title));
 };
