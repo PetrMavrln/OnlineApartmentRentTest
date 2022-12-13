@@ -1,41 +1,41 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "title": "vkLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/vkLogo.svg",
     "href": "https://vk.com/club216604382",
     "alt": "VK"
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "instLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/instLogo.svg",
     "href": "https://instagram.com/kds_posutka?igshid=YmMyMTA2M2Y=",
     "alt": "Inst"
   },
   {
-    "id": "3",
+    "id": 3,
     "title": "whatsappLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/whatsappLogo.svg",
     "href": "https://api.whatsapp.com/send?phone=79063111825",
     "alt": "Whatsapp"
   },
   {
-    "id": "4",
+    "id": 4,
     "title": "tiktokLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/tiktokLogo.svg",
     "href": "",
     "alt": "Tiktok"
   },
   {
-    "id": "5",
+    "id": 5,
     "title": "telegramLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/telegramLogo.svg",
     "href": "https://t.me/Nikita_Lopatin",
     "alt": "Telegram"
   },
   {
-    "id": "6",
+    "id": 6,
     "title": "youtubeLogo",
     "img": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/contacts/youtubeLogo.svg",
     "href": "https://t.me/Nikita_Lopatin",
