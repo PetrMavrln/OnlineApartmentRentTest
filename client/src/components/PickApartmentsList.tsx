@@ -1,10 +1,10 @@
-import { Container, Spinner, Stack } from 'react-bootstrap';
-import styles from '../css-modules/pickApartmentsList.module.css';
-import PickApartmentsCard from './PickApartmentsCard';
-import { Element } from 'react-scroll';
-import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { useEffect } from 'react';
+import { Container, Spinner, Stack } from 'react-bootstrap';
+import { Element } from 'react-scroll';
+import styles from '../css-modules/pickApartmentsList.module.css';
+import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { fetchPickApartments } from '../store/reducers/ActionCreators';
+import PickApartmentsCard from './PickApartmentsCard';
 
 const PickApartmentsList = () => {
   const dispatch = useAppDispatch();

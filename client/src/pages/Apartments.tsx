@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useLocation } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import ApartmentsList from '../components/ApartmentsList';
@@ -22,6 +23,10 @@ const Apartments = () => {
 
   return (
     <Element name="apartments">
+      <Helmet>
+        <title>Выберите апартаменты</title>
+        <meta name="description" content="Выберите подходящие для вас апартаменты" />
+      </Helmet>
       <ApartmentsList />;
     </Element>
   );

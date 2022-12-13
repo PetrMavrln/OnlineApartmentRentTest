@@ -1,12 +1,11 @@
 import { useEffect } from 'react';
 import { Carousel, Container, Spinner, Stack } from 'react-bootstrap';
+import { Element } from 'react-scroll';
 import logo from '../assets/logo.png';
 import styles from '../css-modules/about.module.css';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
 import { IReview } from '../models/IReview';
 import { fetchReviews } from '../store/reducers/ActionCreators';
-import anonymous from '../assets/reviews/anonymous.svg';
-import { Element } from 'react-scroll';
 
 const About = () => {
   const dispatch = useAppDispatch();

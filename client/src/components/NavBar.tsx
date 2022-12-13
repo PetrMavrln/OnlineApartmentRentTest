@@ -1,17 +1,17 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink, useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import styles from '../css-modules/navbar.module.css';
 import {
   // ABOUT_ROUTE,
   // APARTMENTS_ROUTE,
   // CONTACTS_ROUTE,
   MAIN_ROUTE,
+  NEWS_ROUTE,
   // PAYMENT_ROUTE,
   // SERVICES_ROUTE,
   SPECIAL_ROUTE,
-  NEWS_ROUTE,
 } from '../utils/consts';
-import styles from '../css-modules/navbar.module.css';
-import { Link } from 'react-scroll';
 
 const NavBar = () => {
   let location = useLocation();

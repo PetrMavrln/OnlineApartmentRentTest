@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Button, Card, Carousel, Col, Container, Spinner, Stack } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import ScrollToTopBtn from '../components/UI/ScrollToTopBtn';
 import styles from '../css-modules/apartmentPage.module.css';
@@ -30,6 +31,10 @@ const ApartmentPage = () => {
   // <-
   return (
     <div>
+      <Helmet>
+        <title>Изучите выбранные апартаменты</title>
+        <meta name="description" content="Изучите информацию о выбранных вами апартаментах" />
+      </Helmet>
       {isLoading ? (
         <div className={styles.spinner}>
           <Spinner animation="grow" variant="info" />
