@@ -47,6 +47,8 @@
     -webkit-transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   -webkit-filter: brightness(65%);
   filter: brightness(65%);
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .card:hover .img {
