@@ -24,11 +24,12 @@
 }
 
 .title {
-  font-weight: bold;
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 500;
 }
 
 .description {
-  font-weight: bold;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {

@@ -47,7 +47,7 @@ const ApartmentPage = () => {
           <Col md={4} className={styles.col}>
             <Card className={styles.card}>
               <div className={styles.cardInfo}>
-                {apartment?.title} <br />
+                <h2 className={styles.header}>{apartment?.title}</h2> <br />
                 <br />
                 Адрес: {apartment?.address} <br />
                 Комнат: {apartment?.rooms} <br />

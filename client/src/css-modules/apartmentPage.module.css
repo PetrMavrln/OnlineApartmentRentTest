@@ -29,7 +29,7 @@
   margin-bottom: 40px;
   border-color: #bbc6c8;
   /* border: none; */
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .cardInfo {
@@ -46,7 +46,8 @@
 }
 
 .header {
-  font-weight: bold;
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 500;
 }
 
 .apartCol .card {
@@ -94,7 +95,6 @@
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 30px;
-  color: #1d1d1d;
 }
 
 .cardBtn {
@@ -109,7 +109,7 @@
 }
 
 .cardBtn:hover {
-  background-color: #01868c;
+  background-color: rgba(1, 134, 140, 0.3);
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
@@ -163,6 +163,7 @@
 
   .header {
     font-size: 18px;
+    font-weight: 700;
   }
 
   .description p {
@@ -224,6 +225,7 @@
 
   .header {
     font-size: 18px;
+    font-weight: 700;
   }
 
   .cardDescription p {

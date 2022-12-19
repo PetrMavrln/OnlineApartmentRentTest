@@ -9,7 +9,7 @@ const Bullets = () => {
       id: 1,
       img: 'assets/ratingStar.svg',
       title: 'Средний рейтинг Авито - 5',
-      description: 'На основе более 40 отзывов',
+      description: 'На основе более 50 отзывов',
     },
     {
       id: 2,

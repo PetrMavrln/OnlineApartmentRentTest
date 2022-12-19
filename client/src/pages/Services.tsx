@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <Element name="services">
       <Container className={styles.container}>
-        <h1 className={styles.header}>Наши услуги</h1>
+        <h2 className={styles.header}>Наши услуги</h2>
         {isLoading ? (
           <div className={styles.spinner}>
             <Spinner animation="grow" variant="info" />

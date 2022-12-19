@@ -27,7 +27,7 @@
 }
 
 .card:hover {
-  background-color: #01868c;
+  background-color: rgba(1, 134, 140, 0.3);
 }
 
 .img {
@@ -37,11 +37,12 @@
 }
 
 .title {
-  font-weight: bold;
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 500;
 }
 
 .description {
-  font-weight: bold;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1599px) {

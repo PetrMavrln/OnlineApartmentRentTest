@@ -48,7 +48,7 @@
 }
 
 .form Button:hover {
-  background-color: #01868c;
+  background-color: rgba(1, 134, 140, 0.3);
 }
 
 .col {
@@ -60,8 +60,10 @@
   padding-right: 20px;
 } */
 
-.col * {
-  font-weight: bold;
+.col h2,
+a {
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 500;
 }
 
 .col a {
@@ -132,7 +134,7 @@
 }
 
 .socialsWrapper .socialItem:hover {
-  background: #01868c;
+  background: rgba(1, 134, 140, 0.3);
 }
 
 /* .socialsWrapper .facebook:hover {
@@ -195,10 +197,10 @@
   .col a {
     font-size: 18px;
   }
-
-  .col h1 {
+  /* 
+  .col h2 {
     font-size: 24px;
-  }
+  } */
 
   .socialsWrapper {
     margin: 5px 0;
@@ -245,10 +247,6 @@
 
   .col a {
     font-size: 16px;
-  }
-
-  .col h1 {
-    font-size: 18px;
   }
 
   .phoneWrapper {

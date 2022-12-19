@@ -66,6 +66,8 @@
 }
 
 .cardTitle {
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 500;
   padding: 5px 0;
   white-space: nowrap;
 }
@@ -81,8 +83,11 @@
 .cardBottom b {
   color: white;
   font-size: 18px;
-  font-weight: 100;
   z-index: 1;
+}
+
+.cardBottom b {
+  font-weight: 300;
 }
 
 /* .cardBtn {

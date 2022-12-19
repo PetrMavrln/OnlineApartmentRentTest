@@ -1,12 +1,13 @@
 .link {
+  font-family: 'Piazzolla', 'Inter', serif;
   text-decoration: none;
   color: white;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   padding: 5px 5px;
   margin: 13px 15px;
   z-index: 99;
-  text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b;
+  /* text-shadow: -1px -1px 0 #1b1b1b, -2px -2px 1px #1b1b1b; */
   -webkit-transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   -o-transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -26,11 +27,15 @@
 
 .wrapper {
   margin-top: -88px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .link {
     font-size: 18px;
+  }
+  .wrapper {
+    margin-top: -80px;
   }
 }
 
@@ -38,10 +43,16 @@
   .link {
     font-size: 18px;
   }
+  .wrapper {
+    margin-top: -80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .link {
     font-size: 18px;
+  }
+  .wrapper {
+    margin-top: -80px;
   }
 }

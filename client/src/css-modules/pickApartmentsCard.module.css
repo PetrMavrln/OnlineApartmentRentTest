@@ -61,12 +61,13 @@
 }
 
 .title {
-  font-weight: bold;
+  font-family: 'Piazzolla', 'Inter', serif;
+  font-weight: 400;
   color: white;
 }
 
 .description {
-  font-weight: bold;
+  font-weight: 300;
   color: white;
 }
 

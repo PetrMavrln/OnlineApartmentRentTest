@@ -19,7 +19,7 @@ const About = () => {
   return (
     <Element name="about">
       <Container className={styles.container}>
-        <h1 className={styles.header}>О нас</h1>
+        <h2 className={styles.header}>О нас</h2>
         <Stack direction="horizontal" className={styles.info}>
           <img
             className={styles.logo}
@@ -52,7 +52,7 @@ const About = () => {
                 ) : (
                   <img src={review.img} alt="Фото пользователя"></img>
                 )}
-                <h5>{review.title}</h5>
+                <h3>{review.title}</h3>
                 <p>{review.description}</p>
               </Carousel.Item>
             ))}
