@@ -3,31 +3,31 @@
     "id": 1,
     "imgUrl": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/pickApartments/1.1.jpg",
     "title": "Кудрово",
-    "description": "Уютные однокомнатные квартиры с видом на лес. От метро до Дыбенко 15 мин пешком"
+    "description": "Уютные квартиры с видом на лес"
   },
   {
     "id": 2,
     "imgUrl": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/pickApartments/1.2.jpg",
     "title": "Мурино",
-    "description": "описание"
+    "description": "Комфортные апартаменты в экологически чистом спальном районе"
   },
   {
     "id": 3,
     "imgUrl": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/pickApartments/1.3.jpg",
     "title": "Центральный р-н",
-    "description": "описание"
+    "description": "Квартиры в самом центре города"
   },
   {
     "id": 4,
     "imgUrl": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/pickApartments/1.4.jpg",
     "title": "Выборгский р-н",
-    "description": "описание"
+    "description": "Прекрасные апартаменты на светлановском пр-те и в пос. Парголово"
   },
   {
     "id": 5,
     "imgUrl": "https://raw.githubusercontent.com/PetrMavrln/OnlineApartmentRentTest/main/assets/pickApartments/1.5.jpg",
     "title": "Курортный р-н",
-    "description": "описание"
+    "description": "Комфортные квартиры вдоль Финсокго залива"
   },
   {
     "id": 6,
