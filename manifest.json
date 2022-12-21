@@ -1,10 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "KDS",
+  "name": "KDS",
   "icons": [
     {
-      "src": "favicon.png",
-      "sizes": "281x285",
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
